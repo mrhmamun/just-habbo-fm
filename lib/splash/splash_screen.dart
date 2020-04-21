@@ -5,6 +5,7 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:justhabbo_fm/home/home_page.dart';
 import 'package:justhabbo_fm/services/firebase_service.dart';
+import 'package:justhabbo_fm/widgets/bottomInfoBar.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -47,70 +48,75 @@ class _SplashScreenState extends State<SplashScreen>
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-          backgroundColor: Colors.transparent,
-          body: Container(
-            alignment: Alignment.center,
-            decoration: BoxDecoration(
-                gradient: LinearGradient(
-                    begin: Alignment.topRight,
-                    end: Alignment.bottomLeft,
-                    colors: [Color(0xFF00BBDC), Color(0xFF00BBDC)])),
-            child: Center(
-              child: Column(
-                children: <Widget>[
-                  SizedBox(
-                    height: 250,
-                  ),
-                  DelayedAnimation(
-                    child: Text(
-                      "justHabboFM",
-                      style: GoogleFonts.lobster(
-                        textStyle: TextStyle(
+        backgroundColor: Colors.transparent,
+        body: Stack(
+          children: [
+            Container(
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                      begin: Alignment.topRight,
+                      end: Alignment.bottomLeft,
+                      colors: [Color(0xFF00BBDC), Color(0xFF00BBDC)])),
+              child: Center(
+                child: Column(
+                  children: <Widget>[
+                    SizedBox(
+                      height: 250,
+                    ),
+                    DelayedAnimation(
+                      child: Text(
+                        "justHabboFM",
+                        style: GoogleFonts.lobster(
+                            textStyle: TextStyle(
                           fontSize: 35,
                           color: color,
                           fontWeight: FontWeight.bold,
-                        )
+                        )),
                       ),
+                      delay: delayedAmount + 1000,
                     ),
-                    delay: delayedAmount + 1000,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 80),
-                    child: DelayedAnimation(
-                      child: Text(
-                        "Radio App", textAlign: TextAlign.right,
-                        style: GoogleFonts.lobster(
-                          textStyle: TextStyle(
+                    Padding(
+                      padding: const EdgeInsets.only(left: 80),
+                      child: DelayedAnimation(
+                        child: Text(
+                          "Radio App",
+                          textAlign: TextAlign.right,
+                          style: GoogleFonts.lobster(
+                              textStyle: TextStyle(
                             fontSize: 25,
                             color: color,
                             fontWeight: FontWeight.bold,
-                          )
+                          )),
                         ),
-                      ),
-                      delay: delayedAmount + 3000,
-                    ),
-                  ),
-                  SizedBox(
-                    height: 50.0,
-                  ),
-                  DelayedAnimation(
-                    child: GestureDetector(
-                      onTapDown: _onTapDown,
-                      onTapUp: _onTapUp,
-                      child: Transform.scale(
-                        scale: _scale,
-                        child: SpinKitThreeBounce(
-                          color: Colors.white,
-                          size: 20.0,
-                        ),
+                        delay: delayedAmount + 3000,
                       ),
                     ),
-                    delay: delayedAmount + 4000,
-                  ),
-                ],
+                    SizedBox(
+                      height: 50.0,
+                    ),
+                    DelayedAnimation(
+                      child: GestureDetector(
+                        onTapDown: _onTapDown,
+                        onTapUp: _onTapUp,
+                        child: Transform.scale(
+                          scale: _scale,
+                          child: SpinKitThreeBounce(
+                            color: Colors.white,
+                            size: 20.0,
+                          ),
+                        ),
+                      ),
+                      delay: delayedAmount + 4000,
+                    ),
+                  ],
+                ),
               ),
             ),
-          )),
+          ],
+        ),
+        bottomNavigationBar: bottomInfoBar(),
+      ),
     );
   }
 

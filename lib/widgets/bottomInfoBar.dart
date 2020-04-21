@@ -1,45 +1,36 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-class BottomInfoBar extends StatelessWidget {
-  const BottomInfoBar({
-    Key key,
-  }) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return BottomAppBar(
-      elevation: 0.0,
-      child: Container(
-        color: Colors.transparent,
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            SizedBox(
-              height: 50.0,
-              child:Column(
-                children: <Widget>[
-                  SizedBox(height: 5.0,),
-                  Text(
-                    'For any help',
-                    style: TextStyle(
-                      fontSize: 15.0,
-                    ),
-                  ),
-                  Text(
-                    'Call at 16479',
-                    style: TextStyle(
-                      color: Color(0xFFDE1E37),
-                      fontSize: 15.0,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ],
+
+Stack bottomInfoBar(){
+  return Stack(
+    children: [
+      Container(
+        alignment: Alignment.bottomCenter,
+        height: 50,
+        decoration: BoxDecoration(
+          image: const DecorationImage(
+            image: AssetImage('assets/images/bottomimage1.jpg'),
+            fit: BoxFit.cover,
+          ),
         ),
       ),
-    );
-  }
+      Positioned.fill(
+        bottom: 0.0,
+        child: Align(
+          alignment: Alignment.bottomCenter,
+          child: Text(
+            'Copyright: JustHabbo.com, all rights reserved 2020',
+            textAlign: TextAlign.center,
+            style: GoogleFonts.oswald(
+                textStyle: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                )),
+          ),
+        ),
+      ),
+    ],
+  );
 }
