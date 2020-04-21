@@ -12,8 +12,8 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->/Users/mamun/AndroidStudioProjects/justhabbo_fm/android/app/src/debug/AndroidManifest.xml:6:5-66
-14-->/Users/mamun/AndroidStudioProjects/justhabbo_fm/android/app/src/debug/AndroidManifest.xml:6:22-64
+14-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/debug/AndroidManifest.xml:6:22-64
 15    <!-- Include required permissions for Google Maps API to run. -->
 16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 16-->[com.google.android.gms:play-services-maps:17.0.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/6b9b7fc1ad481537ed0a66d62976ec46/play-services-maps-17.0.0/AndroidManifest.xml:23:5-79
@@ -33,154 +33,156 @@
 26         FlutterApplication and put your custom class here.
 27    -->
 28    <application
-28-->/Users/mamun/AndroidStudioProjects/justhabbo_fm/android/app/src/main/AndroidManifest.xml:8:5-46:19
+28-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:8:5-47:19
 29        android:name="io.flutter.app.FlutterApplication"
-29-->/Users/mamun/AndroidStudioProjects/justhabbo_fm/android/app/src/main/AndroidManifest.xml:9:9-57
+29-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:9:9-57
 30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 30-->[androidx.core:core:1.1.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/a528b13ac93e64cafa3d0480e2c93207/core-1.1.0/AndroidManifest.xml:24:18-86
 31        android:debuggable="true"
 32        android:icon="@mipmap/ic_launcher"
-32-->/Users/mamun/AndroidStudioProjects/justhabbo_fm/android/app/src/main/AndroidManifest.xml:11:9-43
-33        android:label="justhabbo_fm" >
-33-->/Users/mamun/AndroidStudioProjects/justhabbo_fm/android/app/src/main/AndroidManifest.xml:10:9-37
-34        <activity
-34-->/Users/mamun/AndroidStudioProjects/justhabbo_fm/android/app/src/main/AndroidManifest.xml:12:9-40:20
-35            android:name="com.justhabbo.justhabbo_fm.MainActivity"
-35-->/Users/mamun/AndroidStudioProjects/justhabbo_fm/android/app/src/main/AndroidManifest.xml:13:13-41
-36            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-36-->/Users/mamun/AndroidStudioProjects/justhabbo_fm/android/app/src/main/AndroidManifest.xml:16:13-163
-37            android:hardwareAccelerated="true"
-37-->/Users/mamun/AndroidStudioProjects/justhabbo_fm/android/app/src/main/AndroidManifest.xml:17:13-47
-38            android:launchMode="singleTop"
-38-->/Users/mamun/AndroidStudioProjects/justhabbo_fm/android/app/src/main/AndroidManifest.xml:14:13-43
-39            android:theme="@style/LaunchTheme"
-39-->/Users/mamun/AndroidStudioProjects/justhabbo_fm/android/app/src/main/AndroidManifest.xml:15:13-47
-40            android:windowSoftInputMode="adjustResize" >
-40-->/Users/mamun/AndroidStudioProjects/justhabbo_fm/android/app/src/main/AndroidManifest.xml:18:13-55
-41
-42            <!--
-43                 Specifies an Android theme to apply to this Activity as soon as
-44                 the Android process has started. This theme is visible to the user
-45                 while the Flutter UI initializes. After that, this theme continues
-46                 to determine the Window background behind the Flutter UI.
-47            -->
-48            <meta-data
-48-->/Users/mamun/AndroidStudioProjects/justhabbo_fm/android/app/src/main/AndroidManifest.xml:23:13-26:17
-49                android:name="io.flutter.embedding.android.NormalTheme"
-49-->/Users/mamun/AndroidStudioProjects/justhabbo_fm/android/app/src/main/AndroidManifest.xml:24:15-70
-50                android:resource="@style/NormalTheme" />
-50-->/Users/mamun/AndroidStudioProjects/justhabbo_fm/android/app/src/main/AndroidManifest.xml:25:15-52
-51            <!--
-52                 Displays an Android View that continues showing the launch screen
-53                 Drawable until Flutter paints its first frame, then this splash
-54                 screen fades out. A splash screen is useful to avoid any visual
-55                 gap between the end of Android's launch screen and the painting of
-56                 Flutter's first frame.
-57            -->
-58            <meta-data
-58-->/Users/mamun/AndroidStudioProjects/justhabbo_fm/android/app/src/main/AndroidManifest.xml:32:13-35:17
-59                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-59-->/Users/mamun/AndroidStudioProjects/justhabbo_fm/android/app/src/main/AndroidManifest.xml:33:15-79
-60                android:resource="@drawable/launch_background" />
-60-->/Users/mamun/AndroidStudioProjects/justhabbo_fm/android/app/src/main/AndroidManifest.xml:34:15-61
-61
-62            <intent-filter>
-62-->/Users/mamun/AndroidStudioProjects/justhabbo_fm/android/app/src/main/AndroidManifest.xml:36:13-39:29
-63                <action android:name="android.intent.action.MAIN" />
-63-->/Users/mamun/AndroidStudioProjects/justhabbo_fm/android/app/src/main/AndroidManifest.xml:37:17-68
-63-->/Users/mamun/AndroidStudioProjects/justhabbo_fm/android/app/src/main/AndroidManifest.xml:37:25-66
-64
-65                <category android:name="android.intent.category.LAUNCHER" />
-65-->/Users/mamun/AndroidStudioProjects/justhabbo_fm/android/app/src/main/AndroidManifest.xml:38:17-76
-65-->/Users/mamun/AndroidStudioProjects/justhabbo_fm/android/app/src/main/AndroidManifest.xml:38:27-74
-66            </intent-filter>
-67        </activity>
-68        <!--
-69             Don't delete the meta-data below.
-70             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-71        -->
-72        <meta-data
-72-->/Users/mamun/AndroidStudioProjects/justhabbo_fm/android/app/src/main/AndroidManifest.xml:43:9-45:33
-73            android:name="flutterEmbedding"
-73-->/Users/mamun/AndroidStudioProjects/justhabbo_fm/android/app/src/main/AndroidManifest.xml:44:13-44
-74            android:value="2" />
-74-->/Users/mamun/AndroidStudioProjects/justhabbo_fm/android/app/src/main/AndroidManifest.xml:45:13-30
-75
-76        <service
-76-->[:firebase_auth] /Users/mamun/AndroidStudioProjects/justhabbo_fm/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-77            android:name="com.google.firebase.components.ComponentDiscoveryService"
-77-->[:firebase_auth] /Users/mamun/AndroidStudioProjects/justhabbo_fm/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
-78            android:directBootAware="true"
-78-->[com.google.firebase:firebase-common:19.3.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/91c6e62ea83a72a3d9c4d959d80816ae/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
-79            android:exported="false" >
-79-->[com.google.firebase:firebase-auth:19.2.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/337e24a263fdd84e41b4282b5c834462/firebase-auth-19.2.0/AndroidManifest.xml:35:13-37
-80            <meta-data
-80-->[:firebase_auth] /Users/mamun/AndroidStudioProjects/justhabbo_fm/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
-81                android:name="com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar"
-81-->[:firebase_auth] /Users/mamun/AndroidStudioProjects/justhabbo_fm/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-122
-82                android:value="com.google.firebase.components.ComponentRegistrar" />
-82-->[:firebase_auth] /Users/mamun/AndroidStudioProjects/justhabbo_fm/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
-83            <meta-data
-83-->[:firebase_core] /Users/mamun/AndroidStudioProjects/justhabbo_fm/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
-84                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar"
-84-->[:firebase_core] /Users/mamun/AndroidStudioProjects/justhabbo_fm/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-123
-85                android:value="com.google.firebase.components.ComponentRegistrar" />
-85-->[:firebase_core] /Users/mamun/AndroidStudioProjects/justhabbo_fm/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
-86            <meta-data
-86-->[com.google.firebase:firebase-auth:19.2.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/337e24a263fdd84e41b4282b5c834462/firebase-auth-19.2.0/AndroidManifest.xml:36:13-38:85
-87                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-87-->[com.google.firebase:firebase-auth:19.2.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/337e24a263fdd84e41b4282b5c834462/firebase-auth-19.2.0/AndroidManifest.xml:37:17-109
-88                android:value="com.google.firebase.components.ComponentRegistrar" />
-88-->[com.google.firebase:firebase-auth:19.2.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/337e24a263fdd84e41b4282b5c834462/firebase-auth-19.2.0/AndroidManifest.xml:38:17-82
-89        </service>
-90
-91        <activity
-91-->[com.google.firebase:firebase-auth:19.2.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/337e24a263fdd84e41b4282b5c834462/firebase-auth-19.2.0/AndroidManifest.xml:24:9-31:50
-92            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-92-->[com.google.firebase:firebase-auth:19.2.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/337e24a263fdd84e41b4282b5c834462/firebase-auth-19.2.0/AndroidManifest.xml:25:13-85
-93            android:excludeFromRecents="true"
-93-->[com.google.firebase:firebase-auth:19.2.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/337e24a263fdd84e41b4282b5c834462/firebase-auth-19.2.0/AndroidManifest.xml:26:13-46
-94            android:exported="true"
-94-->[com.google.firebase:firebase-auth:19.2.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/337e24a263fdd84e41b4282b5c834462/firebase-auth-19.2.0/AndroidManifest.xml:27:13-36
-95            android:launchMode="singleTask"
-95-->[com.google.firebase:firebase-auth:19.2.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/337e24a263fdd84e41b4282b5c834462/firebase-auth-19.2.0/AndroidManifest.xml:28:13-44
-96            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-96-->[com.google.firebase:firebase-auth:19.2.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/337e24a263fdd84e41b4282b5c834462/firebase-auth-19.2.0/AndroidManifest.xml:29:13-102
-97            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- Needs to be explicitly declared on P+ -->
-97-->[com.google.firebase:firebase-auth:19.2.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/337e24a263fdd84e41b4282b5c834462/firebase-auth-19.2.0/AndroidManifest.xml:30:13-72
-98        <uses-library
-98-->[com.google.android.gms:play-services-maps:17.0.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/6b9b7fc1ad481537ed0a66d62976ec46/play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
-99            android:name="org.apache.http.legacy"
-99-->[com.google.android.gms:play-services-maps:17.0.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/6b9b7fc1ad481537ed0a66d62976ec46/play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
-100            android:required="false" />
-100-->[com.google.android.gms:play-services-maps:17.0.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/6b9b7fc1ad481537ed0a66d62976ec46/play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
-101
-102        <activity
-102-->[com.google.android.gms:play-services-base:17.1.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/1cad50e824c2a91bda736a296b3e673e/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
-103            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-103-->[com.google.android.gms:play-services-base:17.1.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/1cad50e824c2a91bda736a296b3e673e/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
-104            android:exported="false"
-104-->[com.google.android.gms:play-services-base:17.1.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/1cad50e824c2a91bda736a296b3e673e/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
-105            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-105-->[com.google.android.gms:play-services-base:17.1.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/1cad50e824c2a91bda736a296b3e673e/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
-106
-107        <provider
-107-->[com.google.firebase:firebase-common:19.3.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/91c6e62ea83a72a3d9c4d959d80816ae/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
-108            android:name="com.google.firebase.provider.FirebaseInitProvider"
-108-->[com.google.firebase:firebase-common:19.3.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/91c6e62ea83a72a3d9c4d959d80816ae/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
-109            android:authorities="com.justhabbo.justhabbo_fm.firebaseinitprovider"
-109-->[com.google.firebase:firebase-common:19.3.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/91c6e62ea83a72a3d9c4d959d80816ae/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
-110            android:exported="false"
-110-->[com.google.firebase:firebase-common:19.3.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/91c6e62ea83a72a3d9c4d959d80816ae/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
-111            android:initOrder="100" />
-111-->[com.google.firebase:firebase-common:19.3.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/91c6e62ea83a72a3d9c4d959d80816ae/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
-112
-113        <meta-data
-113-->[com.google.android.gms:play-services-basement:17.0.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/c8eb8e5c5f23e458f987bf7c6724eb30/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-114            android:name="com.google.android.gms.version"
-114-->[com.google.android.gms:play-services-basement:17.0.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/c8eb8e5c5f23e458f987bf7c6724eb30/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
-115            android:value="@integer/google_play_services_version" />
-115-->[com.google.android.gms:play-services-basement:17.0.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/c8eb8e5c5f23e458f987bf7c6724eb30/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
-116    </application>
-117
-118</manifest>
+32-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:12:9-43
+33        android:label="justhabbo_fm"
+33-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:10:9-37
+34        android:usesCleartextTraffic="true" >
+34-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:11:9-44
+35        <activity
+35-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:13:9-41:20
+36            android:name="com.justhabbo.justhabbo_fm.MainActivity"
+36-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:14:13-41
+37            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+37-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:17:13-163
+38            android:hardwareAccelerated="true"
+38-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:18:13-47
+39            android:launchMode="singleTop"
+39-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:15:13-43
+40            android:theme="@style/LaunchTheme"
+40-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:16:13-47
+41            android:windowSoftInputMode="adjustResize" >
+41-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:19:13-55
+42
+43            <!--
+44                 Specifies an Android theme to apply to this Activity as soon as
+45                 the Android process has started. This theme is visible to the user
+46                 while the Flutter UI initializes. After that, this theme continues
+47                 to determine the Window background behind the Flutter UI.
+48            -->
+49            <meta-data
+49-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:24:13-27:17
+50                android:name="io.flutter.embedding.android.NormalTheme"
+50-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:25:15-70
+51                android:resource="@style/NormalTheme" />
+51-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:26:15-52
+52            <!--
+53                 Displays an Android View that continues showing the launch screen
+54                 Drawable until Flutter paints its first frame, then this splash
+55                 screen fades out. A splash screen is useful to avoid any visual
+56                 gap between the end of Android's launch screen and the painting of
+57                 Flutter's first frame.
+58            -->
+59            <meta-data
+59-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:33:13-36:17
+60                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+60-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:34:15-79
+61                android:resource="@drawable/launch_background" />
+61-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:35:15-61
+62
+63            <intent-filter>
+63-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:37:13-40:29
+64                <action android:name="android.intent.action.MAIN" />
+64-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:38:17-68
+64-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:38:25-66
+65
+66                <category android:name="android.intent.category.LAUNCHER" />
+66-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:39:17-76
+66-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:39:27-74
+67            </intent-filter>
+68        </activity>
+69        <!--
+70             Don't delete the meta-data below.
+71             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+72        -->
+73        <meta-data
+73-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:44:9-46:33
+74            android:name="flutterEmbedding"
+74-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:45:13-44
+75            android:value="2" />
+75-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:46:13-30
+76
+77        <service
+77-->[:firebase_auth] /Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+78            android:name="com.google.firebase.components.ComponentDiscoveryService"
+78-->[:firebase_auth] /Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+79            android:directBootAware="true"
+79-->[com.google.firebase:firebase-common:19.3.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/91c6e62ea83a72a3d9c4d959d80816ae/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+80            android:exported="false" >
+80-->[com.google.firebase:firebase-auth:19.2.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/337e24a263fdd84e41b4282b5c834462/firebase-auth-19.2.0/AndroidManifest.xml:35:13-37
+81            <meta-data
+81-->[:firebase_auth] /Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+82                android:name="com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar"
+82-->[:firebase_auth] /Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-122
+83                android:value="com.google.firebase.components.ComponentRegistrar" />
+83-->[:firebase_auth] /Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+84            <meta-data
+84-->[:firebase_core] /Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+85                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar"
+85-->[:firebase_core] /Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-123
+86                android:value="com.google.firebase.components.ComponentRegistrar" />
+86-->[:firebase_core] /Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+87            <meta-data
+87-->[com.google.firebase:firebase-auth:19.2.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/337e24a263fdd84e41b4282b5c834462/firebase-auth-19.2.0/AndroidManifest.xml:36:13-38:85
+88                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+88-->[com.google.firebase:firebase-auth:19.2.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/337e24a263fdd84e41b4282b5c834462/firebase-auth-19.2.0/AndroidManifest.xml:37:17-109
+89                android:value="com.google.firebase.components.ComponentRegistrar" />
+89-->[com.google.firebase:firebase-auth:19.2.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/337e24a263fdd84e41b4282b5c834462/firebase-auth-19.2.0/AndroidManifest.xml:38:17-82
+90        </service> <!-- Needs to be explicitly declared on P+ -->
+91        <uses-library
+91-->[com.google.android.gms:play-services-maps:17.0.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/6b9b7fc1ad481537ed0a66d62976ec46/play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+92            android:name="org.apache.http.legacy"
+92-->[com.google.android.gms:play-services-maps:17.0.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/6b9b7fc1ad481537ed0a66d62976ec46/play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+93            android:required="false" />
+93-->[com.google.android.gms:play-services-maps:17.0.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/6b9b7fc1ad481537ed0a66d62976ec46/play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+94
+95        <activity
+95-->[com.google.firebase:firebase-auth:19.2.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/337e24a263fdd84e41b4282b5c834462/firebase-auth-19.2.0/AndroidManifest.xml:24:9-31:50
+96            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+96-->[com.google.firebase:firebase-auth:19.2.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/337e24a263fdd84e41b4282b5c834462/firebase-auth-19.2.0/AndroidManifest.xml:25:13-85
+97            android:excludeFromRecents="true"
+97-->[com.google.firebase:firebase-auth:19.2.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/337e24a263fdd84e41b4282b5c834462/firebase-auth-19.2.0/AndroidManifest.xml:26:13-46
+98            android:exported="true"
+98-->[com.google.firebase:firebase-auth:19.2.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/337e24a263fdd84e41b4282b5c834462/firebase-auth-19.2.0/AndroidManifest.xml:27:13-36
+99            android:launchMode="singleTask"
+99-->[com.google.firebase:firebase-auth:19.2.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/337e24a263fdd84e41b4282b5c834462/firebase-auth-19.2.0/AndroidManifest.xml:28:13-44
+100            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+100-->[com.google.firebase:firebase-auth:19.2.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/337e24a263fdd84e41b4282b5c834462/firebase-auth-19.2.0/AndroidManifest.xml:29:13-102
+101            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+101-->[com.google.firebase:firebase-auth:19.2.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/337e24a263fdd84e41b4282b5c834462/firebase-auth-19.2.0/AndroidManifest.xml:30:13-72
+102
+103        <provider
+103-->[com.google.firebase:firebase-common:19.3.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/91c6e62ea83a72a3d9c4d959d80816ae/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+104            android:name="com.google.firebase.provider.FirebaseInitProvider"
+104-->[com.google.firebase:firebase-common:19.3.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/91c6e62ea83a72a3d9c4d959d80816ae/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+105            android:authorities="com.justhabbo.justhabbo_fm.firebaseinitprovider"
+105-->[com.google.firebase:firebase-common:19.3.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/91c6e62ea83a72a3d9c4d959d80816ae/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+106            android:exported="false"
+106-->[com.google.firebase:firebase-common:19.3.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/91c6e62ea83a72a3d9c4d959d80816ae/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+107            android:initOrder="100" />
+107-->[com.google.firebase:firebase-common:19.3.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/91c6e62ea83a72a3d9c4d959d80816ae/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+108
+109        <activity
+109-->[com.google.android.gms:play-services-base:17.1.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/1cad50e824c2a91bda736a296b3e673e/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+110            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+110-->[com.google.android.gms:play-services-base:17.1.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/1cad50e824c2a91bda736a296b3e673e/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+111            android:exported="false"
+111-->[com.google.android.gms:play-services-base:17.1.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/1cad50e824c2a91bda736a296b3e673e/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+112            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+112-->[com.google.android.gms:play-services-base:17.1.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/1cad50e824c2a91bda736a296b3e673e/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+113
+114        <meta-data
+114-->[com.google.android.gms:play-services-basement:17.0.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/c8eb8e5c5f23e458f987bf7c6724eb30/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+115            android:name="com.google.android.gms.version"
+115-->[com.google.android.gms:play-services-basement:17.0.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/c8eb8e5c5f23e458f987bf7c6724eb30/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+116            android:value="@integer/google_play_services_version" />
+116-->[com.google.android.gms:play-services-basement:17.0.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/c8eb8e5c5f23e458f987bf7c6724eb30/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+117    </application>
+118
+119</manifest>

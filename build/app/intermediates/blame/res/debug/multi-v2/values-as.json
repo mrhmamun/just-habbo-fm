@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mamun/AndroidStudioProjects/justhabbo_fm/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-as/values-as.xml",
+            "outputFile": "/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-as/values-as.xml",
             "map": [
                 {
                     "source": "/Users/mamun/.gradle/caches/transforms-2/files-2.1/c8eb8e5c5f23e458f987bf7c6724eb30/jetified-play-services-basement-17.0.0/res/values-as/values.xml",

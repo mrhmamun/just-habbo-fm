@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mamun/AndroidStudioProjects/justhabbo_fm/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-my/values-my.xml",
+            "outputFile": "/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-my/values-my.xml",
             "map": [
                 {
                     "source": "/Users/mamun/.gradle/caches/transforms-2/files-2.1/c8eb8e5c5f23e458f987bf7c6724eb30/jetified-play-services-basement-17.0.0/res/values-my/values.xml",
@@ -38,6 +38,23 @@
                     }
                 },
                 {
+                    "source": "/Users/mamun/.gradle/caches/transforms-2/files-2.1/c0e2f2836875d233a7c358ee9a431794/jetified-exoplayer-ui-2.8.2/res/values-my/values-my.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,142,229,301,369,436,511,596,687,773,844,915,980,1055,1127,1200,1269,1351,1429,1482,1540,1590,1651,1716,1774,1838,1903,1971,2025,2087,2163,2239",
+                        "endColumns": "86,86,71,67,66,74,84,90,85,70,70,64,74,71,72,68,81,77,52,57,49,60,64,57,63,64,67,53,61,75,75,53",
+                        "endOffsets": "137,224,296,364,431,506,591,682,768,839,910,975,1050,1122,1195,1264,1346,1424,1477,1535,1585,1646,1711,1769,1833,1898,1966,2020,2082,2158,2234,2288"
+                    },
+                    "to": {
+                        "startLines": "20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2948,3035,3122,3194,3262,3329,3404,3489,3580,3666,3737,3808,3873,3948,4020,4093,4162,4244,4322,4375,4433,4483,4544,4609,4667,4731,4796,4864,4918,4980,5056,5132",
+                        "endColumns": "86,86,71,67,66,74,84,90,85,70,70,64,74,71,72,68,81,77,52,57,49,60,64,57,63,64,67,53,61,75,75,53",
+                        "endOffsets": "3030,3117,3189,3257,3324,3399,3484,3575,3661,3732,3803,3868,3943,4015,4088,4157,4239,4317,4370,4428,4478,4539,4604,4662,4726,4791,4859,4913,4975,5051,5127,5181"
+                    }
+                },
+                {
                     "source": "/Users/mamun/.gradle/caches/transforms-2/files-2.1/a528b13ac93e64cafa3d0480e2c93207/core-1.1.0/res/values-my/values-my.xml",
                     "from": {
                         "startLines": "2",
@@ -47,11 +64,11 @@
                         "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "20",
+                        "startLines": "52",
                         "startColumns": "4",
-                        "startOffsets": "2948",
+                        "startOffsets": "5186",
                         "endColumns": "100",
-                        "endOffsets": "3044"
+                        "endOffsets": "5282"
                     }
                 }
             ]

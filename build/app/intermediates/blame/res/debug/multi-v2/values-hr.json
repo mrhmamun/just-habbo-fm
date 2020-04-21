@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mamun/AndroidStudioProjects/justhabbo_fm/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-hr/values-hr.xml",
+            "outputFile": "/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-hr/values-hr.xml",
             "map": [
                 {
                     "source": "/Users/mamun/.gradle/caches/transforms-2/files-2.1/1cad50e824c2a91bda736a296b3e673e/play-services-base-17.1.0/res/values-hr/values.xml",
@@ -30,11 +30,11 @@
                         "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "20",
+                        "startLines": "52",
                         "startColumns": "4",
-                        "startOffsets": "2781",
+                        "startOffsets": "5006",
                         "endColumns": "100",
-                        "endOffsets": "2877"
+                        "endOffsets": "5102"
                     }
                 },
                 {
@@ -52,6 +52,23 @@
                         "startOffsets": "1275",
                         "endColumns": "190",
                         "endOffsets": "1461"
+                    }
+                },
+                {
+                    "source": "/Users/mamun/.gradle/caches/transforms-2/files-2.1/c0e2f2836875d233a7c358ee9a431794/jetified-exoplayer-ui-2.8.2/res/values-hr/values-hr.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,135,225,298,363,434,512,587,667,744,812,896,963,1038,1099,1164,1237,1316,1389,1442,1500,1548,1609,1673,1732,1803,1868,1939,1991,2054,2139,2224",
+                        "endColumns": "79,89,72,64,70,77,74,79,76,67,83,66,74,60,64,72,78,72,52,57,47,60,63,58,70,64,70,51,62,84,84,55",
+                        "endOffsets": "130,220,293,358,429,507,582,662,739,807,891,958,1033,1094,1159,1232,1311,1384,1437,1495,1543,1604,1668,1727,1798,1863,1934,1986,2049,2134,2219,2275"
+                    },
+                    "to": {
+                        "startLines": "20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2781,2861,2951,3024,3089,3160,3238,3313,3393,3470,3538,3622,3689,3764,3825,3890,3963,4042,4115,4168,4226,4274,4335,4399,4458,4529,4594,4665,4717,4780,4865,4950",
+                        "endColumns": "79,89,72,64,70,77,74,79,76,67,83,66,74,60,64,72,78,72,52,57,47,60,63,58,70,64,70,51,62,84,84,55",
+                        "endOffsets": "2856,2946,3019,3084,3155,3233,3308,3388,3465,3533,3617,3684,3759,3820,3885,3958,4037,4110,4163,4221,4269,4330,4394,4453,4524,4589,4660,4712,4775,4860,4945,5001"
                     }
                 }
             ]
