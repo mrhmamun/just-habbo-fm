@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_radio/flutter_radio.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:justhabbo_fm/screens/about.dart';
+import 'package:justhabbo_fm/screens/app_updates.dart';
+import 'package:justhabbo_fm/screens/social_media.dart';
 import 'package:justhabbo_fm/widgets/bottomInfoBar.dart';
 
 class HomePage extends StatefulWidget {
@@ -11,7 +13,8 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
-  String url = "http://server-23.stream-server.nl:8438";
+//  String url = "http://server-23.stream-server.nl:8438";
+  String url = "https://178.79.134.144/radio/8000/radio.mp3";
 
   bool isPlaying = false;
   bool isVisible = true;
@@ -63,55 +66,20 @@ class _HomePageState extends State<HomePage> {
             text: 'Version',
             onPressed: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => HomePage()));
+                  MaterialPageRoute(builder: (context) => AppUpdates()));
             },
           ),
           headerBtn(
             text: 'Contact',
             onPressed: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => HomePage()));
+                  MaterialPageRoute(builder: (context) => SocialMedia()));
             },
           ),
         ],
       ),
       body: ListView(
         children: [
-//          Container(
-//            color: Color(0xFF414141),
-//            child: Row(
-//              children: [
-//                headerBtn(
-//                  text: 'Home',
-//                  onPressed: () {
-//                    Navigator.push(context,
-//                        MaterialPageRoute(builder: (context) => HomePage()));
-//                  },
-//                ),
-//                headerBtn(
-//                  text: 'About',
-//                  onPressed: () {
-//                    Navigator.push(context,
-//                        MaterialPageRoute(builder: (context) => HomePage()));
-//                  },
-//                ),
-//                headerBtn(
-//                  text: 'Version',
-//                  onPressed: () {
-//                    Navigator.push(context,
-//                        MaterialPageRoute(builder: (context) => HomePage()));
-//                  },
-//                ),
-//                headerBtn(
-//                  text: 'Contact',
-//                  onPressed: () {
-//                    Navigator.push(context,
-//                        MaterialPageRoute(builder: (context) => HomePage()));
-//                  },
-//                ),
-//              ],
-//            ),
-//          ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 50),
             child: Column(
