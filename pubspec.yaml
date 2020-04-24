@@ -34,8 +34,8 @@ dependencies:
   curved_navigation_bar:
   http:
   google_fonts: ^0.5.0+1
-  flutter_radio:
   url_launcher:
+  just_audio:
 
 dev_dependencies:
   flutter_test:

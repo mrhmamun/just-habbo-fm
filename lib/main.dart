@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:justhabbo_fm/splash/splash_screen.dart';
-import 'package:justhabbo_fm/test_page2.dart';
-
 import 'splash/splash_screen.dart';
 
 void main() {

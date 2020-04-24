@@ -1,10 +1,13 @@
+
 import 'package:flutter/material.dart';
-import 'package:flutter_radio/flutter_radio.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:just_audio/just_audio.dart';
 import 'package:justhabbo_fm/screens/about.dart';
 import 'package:justhabbo_fm/screens/app_updates.dart';
-import 'package:justhabbo_fm/screens/social_media.dart';
+import 'package:justhabbo_fm/screens/more.dart';
 import 'package:justhabbo_fm/widgets/bottomInfoBar.dart';
+
+
 
 class HomePage extends StatefulWidget {
   @override
@@ -13,23 +16,45 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
-  String url = "https://server-23.stream-server.nl:8438";
-//  String url = "https://178.79.134.144/radio/8000/radio.mp3";
-//  String url = "https://tunein.com/artist/Url-m82123";
-
-  bool isPlaying = false;
-  bool isVisible = true;
-
+  AudioPlayer _player;
   @override
   void initState() {
     super.initState();
-    audioStart();
+    _player = AudioPlayer();
+
+    _player.setUrl(
+        "http://server-23.stream-server.nl:8438/")
+        .catchError((error) {
+      // catch audio error ex: 404 url, wrong url ...
+      print(error);
+    });
   }
 
-  Future<void> audioStart() async {
-    await FlutterRadio.audioStart();
-    print('Audio Start OK');
+  @override
+  void dispose() {
+    _player.dispose();
+    super.dispose();
   }
+
+
+  //to skip ssl certificate
+  //https://stackoverflow.com/questions/54104685/flutter-add-self-signed-certificate-from-asset-folder
+
+//
+//  Future<ByteData> getFileData(String path) async {
+//    return await rootBundle.load(path);
+//  }
+//
+//  void initializeHttpClient() async {
+//    try {
+//      ByteData data = await rootBundle.load('assets/raw/certificate.crt');
+//      SecurityContext context = SecurityContext.defaultContext;
+//      context.setTrustedCertificatesBytes(data.buffer.asUint8List());
+//      var client = HttpClient(context: context);
+//    } on Exception catch (exception) {
+//      print(exception.toString());
+//    }
+//  }
 
   FlatButton headerBtn({Function onPressed, String text}) {
     return FlatButton(
@@ -51,30 +76,27 @@ class _HomePageState extends State<HomePage> {
         actions: [
           headerBtn(
             text: 'Home',
-            onPressed: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => HomePage()));
-            },
+            onPressed: null,
           ),
           headerBtn(
             text: 'About',
             onPressed: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => About()));
+                  MaterialPageRoute(builder: (_) => About()));
             },
           ),
           headerBtn(
             text: 'Version',
             onPressed: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => AppUpdates()));
+                  MaterialPageRoute(builder: (_) => AppUpdates()));
             },
           ),
           headerBtn(
             text: 'More',
             onPressed: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => SocialMedia()));
+                  MaterialPageRoute(builder: (_) => More()));
             },
           ),
         ],
@@ -107,7 +129,6 @@ class _HomePageState extends State<HomePage> {
                         alignment: Alignment.center,
                         child: Text(
                           'JustHabbo',
-
                           textAlign: TextAlign.center,
                           style: GoogleFonts.passionOne(
                               textStyle: TextStyle(
@@ -126,37 +147,38 @@ class _HomePageState extends State<HomePage> {
                     )
                   ],
                 ),
-                Container(
-                  padding: EdgeInsets.only(right: 50),
-                  alignment: Alignment.center,
-                  color: Color(0xFF00BBDC),
-                  child: new Column(
-                    children: <Widget>[
-                      IconButton(
-                        icon: isPlaying
-                            ? Icon(
-                          Icons.pause_circle_outline,
-                          size: 90,
-                          color: Colors.white,
-                        )
-                            : Icon(
-                          Icons.play_circle_outline,
-                          color: Colors.white,
-                          size: 90,
-                        ),
-                        onPressed: () {
-                          setState(() {
-                            FlutterRadio.play(url: url);
-                            isPlaying = !isPlaying;
-                            isVisible = !isVisible;
-                          });
-                        },
-                      ),
-                      SizedBox(
-                        height: 50,
-                      )
-                    ],
-                  ),
+                StreamBuilder<FullAudioPlaybackState>(
+                  stream: _player.fullPlaybackStateStream,
+                  builder: (context, snapshot) {
+                    final fullState = snapshot.data;
+                    final state = fullState?.state;
+                    final buffering = fullState?.buffering;
+                    return Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        if (state == AudioPlaybackState.connecting ||
+                            buffering == true)
+                          Container(
+                            margin: EdgeInsets.all(8.0),
+                            width: 64.0,
+                            height: 64.0,
+                            child: CircularProgressIndicator(),
+                          )
+                        else if (state == AudioPlaybackState.playing)
+                          IconButton(
+                            icon: Icon(Icons.pause_circle_outline,color: Colors.white,),
+                            iconSize: 80.0,
+                            onPressed: _player.pause,
+                          )
+                        else
+                          IconButton(
+                            icon: Icon(Icons.play_circle_filled,color: Colors.white,),
+                            iconSize: 80.0,
+                            onPressed: _player.play,
+                          ),
+                      ],
+                    );
+                  },
                 ),
               ],
             ),

@@ -10,133 +10,10 @@ package com.justhabbo.justhabbo_fm;
 public final class R {
   public static final class attr {
     /**
-     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
-     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
-     * "<code>#<i>aarrggbb</i></code>".
-     */
-    public static final int ad_marker_color=0x7f010000;
-    /**
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     */
-    public static final int ad_marker_width=0x7f010001;
-    /**
      * Alpha multiplier applied to the base color.
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
-    public static final int alpha=0x7f010002;
-    /**
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     */
-    public static final int ambientEnabled=0x7f010003;
-    /**
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     */
-    public static final int auto_show=0x7f010004;
-    /**
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     */
-    public static final int bar_height=0x7f010005;
-    /**
-     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
-     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
-     * "<code>#<i>aarrggbb</i></code>".
-     */
-    public static final int buffered_color=0x7f010006;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     * <p>Must be one of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>icon_only</td><td>2</td><td></td></tr>
-     * <tr><td>standard</td><td>0</td><td></td></tr>
-     * <tr><td>wide</td><td>1</td><td></td></tr>
-     * </table>
-     */
-    public static final int buttonSize=0x7f010007;
-    /**
-     * <p>May be a floating point value, such as "<code>1.2</code>".
-     */
-    public static final int cameraBearing=0x7f010008;
-    /**
-     * <p>May be a floating point value, such as "<code>1.2</code>".
-     */
-    public static final int cameraMaxZoomPreference=0x7f010009;
-    /**
-     * <p>May be a floating point value, such as "<code>1.2</code>".
-     */
-    public static final int cameraMinZoomPreference=0x7f01000a;
-    /**
-     * <p>May be a floating point value, such as "<code>1.2</code>".
-     */
-    public static final int cameraTargetLat=0x7f01000b;
-    /**
-     * <p>May be a floating point value, such as "<code>1.2</code>".
-     */
-    public static final int cameraTargetLng=0x7f01000c;
-    /**
-     * <p>May be a floating point value, such as "<code>1.2</code>".
-     */
-    public static final int cameraTilt=0x7f01000d;
-    /**
-     * <p>May be a floating point value, such as "<code>1.2</code>".
-     */
-    public static final int cameraZoom=0x7f01000e;
-    /**
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     */
-    public static final int circleCrop=0x7f01000f;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     * <p>Must be one of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>auto</td><td>2</td><td></td></tr>
-     * <tr><td>dark</td><td>0</td><td></td></tr>
-     * <tr><td>light</td><td>1</td><td></td></tr>
-     * </table>
-     */
-    public static final int colorScheme=0x7f010010;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     */
-    public static final int controller_layout_id=0x7f010011;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     */
-    public static final int default_artwork=0x7f010012;
-    /**
-     * <p>May be an integer value, such as "<code>100</code>".
-     */
-    public static final int fastforward_increment=0x7f010013;
+    public static final int alpha=0x7f010000;
     /**
      * The reference to the font file to be used. This should be a file in the res/font folder
      * and should therefore have an R reference value. E.g. @font/myfont
@@ -145,13 +22,13 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int font=0x7f010014;
+    public static final int font=0x7f010001;
     /**
      * The authority of the Font Provider to be used for the request.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderAuthority=0x7f010015;
+    public static final int fontProviderAuthority=0x7f010002;
     /**
      * The sets of hashes for the certificates the provider should be signed with. This is
      * used to verify the identity of the provider, and is only required if the provider is not
@@ -163,7 +40,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int fontProviderCerts=0x7f010016;
+    public static final int fontProviderCerts=0x7f010003;
     /**
      * The strategy to be used when fetching font data from a font provider in XML layouts.
      * This attribute is ignored when the resource is loaded from code, as it is equivalent to the
@@ -190,7 +67,7 @@ public final class R {
      * default typeface will be used instead.</td></tr>
      * </table>
      */
-    public static final int fontProviderFetchStrategy=0x7f010017;
+    public static final int fontProviderFetchStrategy=0x7f010004;
     /**
      * The length of the timeout during fetching.
      * <p>May be an integer value, such as "<code>100</code>".
@@ -204,21 +81,21 @@ public final class R {
      * timeout and wait until a reply is received from the font provider.</td></tr>
      * </table>
      */
-    public static final int fontProviderFetchTimeout=0x7f010018;
+    public static final int fontProviderFetchTimeout=0x7f010005;
     /**
      * The package for the Font Provider to be used for the request. This is used to verify
      * the identity of the provider.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderPackage=0x7f010019;
+    public static final int fontProviderPackage=0x7f010006;
     /**
      * The query to be sent over to the provider. Refer to your font provider's documentation
      * on the format of this string.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderQuery=0x7f01001a;
+    public static final int fontProviderQuery=0x7f010007;
     /**
      * The style of the given font file. This will be used when the font is being loaded into
      * the font stack and will override any style information in the font's header tables. If
@@ -233,7 +110,7 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int fontStyle=0x7f01001b;
+    public static final int fontStyle=0x7f010008;
     /**
      * The variation settings to be applied to the font. The string should be in the following
      * format: "'tag1' value1, 'tag2' value2, ...". If the default variation settings should be
@@ -242,7 +119,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontVariationSettings=0x7f01001c;
+    public static final int fontVariationSettings=0x7f010009;
     /**
      * The weight of the given font file. This will be used when the font is being loaded into
      * the font stack and will override any weight information in the font's header tables. Must
@@ -251,307 +128,19 @@ public final class R {
      * in the font's header tables will be used.
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int fontWeight=0x7f01001d;
-    /**
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     */
-    public static final int hide_during_ads=0x7f01001e;
-    /**
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     */
-    public static final int hide_on_touch=0x7f01001f;
-    /**
-     * <p>May be a floating point value, such as "<code>1.2</code>".
-     */
-    public static final int imageAspectRatio=0x7f010020;
-    /**
-     * <p>Must be one of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>adjust_height</td><td>2</td><td></td></tr>
-     * <tr><td>adjust_width</td><td>1</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * </table>
-     */
-    public static final int imageAspectRatioAdjust=0x7f010021;
-    /**
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     */
-    public static final int keep_content_on_player_reset=0x7f010022;
-    /**
-     * <p>May be a floating point value, such as "<code>1.2</code>".
-     */
-    public static final int latLngBoundsNorthEastLatitude=0x7f010023;
-    /**
-     * <p>May be a floating point value, such as "<code>1.2</code>".
-     */
-    public static final int latLngBoundsNorthEastLongitude=0x7f010024;
-    /**
-     * <p>May be a floating point value, such as "<code>1.2</code>".
-     */
-    public static final int latLngBoundsSouthWestLatitude=0x7f010025;
-    /**
-     * <p>May be a floating point value, such as "<code>1.2</code>".
-     */
-    public static final int latLngBoundsSouthWestLongitude=0x7f010026;
-    /**
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     */
-    public static final int liteMode=0x7f010027;
-    /**
-     * <p>Must be one of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>hybrid</td><td>4</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>normal</td><td>1</td><td></td></tr>
-     * <tr><td>satellite</td><td>2</td><td></td></tr>
-     * <tr><td>terrain</td><td>3</td><td></td></tr>
-     * </table>
-     */
-    public static final int mapType=0x7f010028;
-    /**
-     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
-     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
-     * "<code>#<i>aarrggbb</i></code>".
-     */
-    public static final int played_ad_marker_color=0x7f010029;
-    /**
-     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
-     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
-     * "<code>#<i>aarrggbb</i></code>".
-     */
-    public static final int played_color=0x7f01002a;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     */
-    public static final int player_layout_id=0x7f01002b;
-    /**
-     * <p>Must be one or more (separated by '|') of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>all</td><td>2</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>one</td><td>1</td><td></td></tr>
-     * </table>
-     */
-    public static final int repeat_toggle_modes=0x7f01002c;
-    /**
-     * <p>Must be one of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>fill</td><td>3</td><td></td></tr>
-     * <tr><td>fit</td><td>0</td><td></td></tr>
-     * <tr><td>fixed_height</td><td>2</td><td></td></tr>
-     * <tr><td>fixed_width</td><td>1</td><td></td></tr>
-     * <tr><td>zoom</td><td>4</td><td></td></tr>
-     * </table>
-     */
-    public static final int resize_mode=0x7f01002d;
-    /**
-     * <p>May be an integer value, such as "<code>100</code>".
-     */
-    public static final int rewind_increment=0x7f01002e;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     * <p>May be a string value, using '\\;' to escape characters such as
-     * '\\n' or '\\uxxxx' for a unicode character;
-     */
-    public static final int scopeUris=0x7f01002f;
-    /**
-     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
-     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
-     * "<code>#<i>aarrggbb</i></code>".
-     */
-    public static final int scrubber_color=0x7f010030;
-    /**
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     */
-    public static final int scrubber_disabled_size=0x7f010031;
-    /**
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     */
-    public static final int scrubber_dragged_size=0x7f010032;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     */
-    public static final int scrubber_drawable=0x7f010033;
-    /**
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     */
-    public static final int scrubber_enabled_size=0x7f010034;
-    /**
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     */
-    public static final int show_buffering=0x7f010035;
-    /**
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     */
-    public static final int show_shuffle_button=0x7f010036;
-    /**
-     * <p>May be an integer value, such as "<code>100</code>".
-     */
-    public static final int show_timeout=0x7f010037;
-    /**
-     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
-     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
-     * "<code>#<i>aarrggbb</i></code>".
-     */
-    public static final int shutter_background_color=0x7f010038;
-    /**
-     * <p>Must be one of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>surface_view</td><td>1</td><td></td></tr>
-     * <tr><td>texture_view</td><td>2</td><td></td></tr>
-     * </table>
-     */
-    public static final int surface_type=0x7f010039;
-    /**
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     */
-    public static final int touch_target_height=0x7f01003a;
+    public static final int fontWeight=0x7f01000a;
     /**
      * The index of the font in the tcc font file. If the font file referenced is not in the
      * tcc format, this attribute needs not be specified.
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int ttcIndex=0x7f01003b;
-    /**
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     */
-    public static final int uiCompass=0x7f01003c;
-    /**
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     */
-    public static final int uiMapToolbar=0x7f01003d;
-    /**
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     */
-    public static final int uiRotateGestures=0x7f01003e;
-    /**
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     */
-    public static final int uiScrollGestures=0x7f01003f;
-    /**
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     */
-    public static final int uiScrollGesturesDuringRotateOrZoom=0x7f010040;
-    /**
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     */
-    public static final int uiTiltGestures=0x7f010041;
-    /**
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     */
-    public static final int uiZoomControls=0x7f010042;
-    /**
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     */
-    public static final int uiZoomGestures=0x7f010043;
-    /**
-     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
-     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
-     * "<code>#<i>aarrggbb</i></code>".
-     */
-    public static final int unplayed_color=0x7f010044;
-    /**
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     */
-    public static final int useViewLifecycle=0x7f010045;
-    /**
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     */
-    public static final int use_artwork=0x7f010046;
-    /**
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     */
-    public static final int use_controller=0x7f010047;
-    /**
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     */
-    public static final int zOrderOnTop=0x7f010048;
+    public static final int ttcIndex=0x7f01000b;
   }
   public static final class color {
-    public static final int common_google_signin_btn_text_dark=0x7f020000;
-    public static final int common_google_signin_btn_text_dark_default=0x7f020001;
-    public static final int common_google_signin_btn_text_dark_disabled=0x7f020002;
-    public static final int common_google_signin_btn_text_dark_focused=0x7f020003;
-    public static final int common_google_signin_btn_text_dark_pressed=0x7f020004;
-    public static final int common_google_signin_btn_text_light=0x7f020005;
-    public static final int common_google_signin_btn_text_light_default=0x7f020006;
-    public static final int common_google_signin_btn_text_light_disabled=0x7f020007;
-    public static final int common_google_signin_btn_text_light_focused=0x7f020008;
-    public static final int common_google_signin_btn_text_light_pressed=0x7f020009;
-    public static final int common_google_signin_btn_tint=0x7f02000a;
-    public static final int exo_edit_mode_background_color=0x7f02000b;
-    public static final int exo_error_message_background_color=0x7f02000c;
-    public static final int notification_action_color_filter=0x7f02000d;
-    public static final int notification_icon_bg_color=0x7f02000e;
-    public static final int notification_material_background_media_default_color=0x7f02000f;
-    public static final int primary_text_default_material_dark=0x7f020010;
-    public static final int ripple_material_light=0x7f020011;
-    public static final int secondary_text_default_material_dark=0x7f020012;
-    public static final int secondary_text_default_material_light=0x7f020013;
+    public static final int notification_action_color_filter=0x7f020000;
+    public static final int notification_icon_bg_color=0x7f020001;
+    public static final int ripple_material_light=0x7f020002;
+    public static final int secondary_text_default_material_light=0x7f020003;
   }
   public static final class dimen {
     public static final int compat_button_inset_horizontal_material=0x7f030000;
@@ -561,91 +150,36 @@ public final class R {
     public static final int compat_control_corner_material=0x7f030004;
     public static final int compat_notification_large_icon_max_height=0x7f030005;
     public static final int compat_notification_large_icon_max_width=0x7f030006;
-    public static final int exo_media_button_height=0x7f030007;
-    public static final int exo_media_button_width=0x7f030008;
-    public static final int notification_action_icon_size=0x7f030009;
-    public static final int notification_action_text_size=0x7f03000a;
-    public static final int notification_big_circle_margin=0x7f03000b;
-    public static final int notification_content_margin_start=0x7f03000c;
-    public static final int notification_large_icon_height=0x7f03000d;
-    public static final int notification_large_icon_width=0x7f03000e;
-    public static final int notification_main_column_padding_top=0x7f03000f;
-    public static final int notification_media_narrow_margin=0x7f030010;
-    public static final int notification_right_icon_size=0x7f030011;
-    public static final int notification_right_side_padding_top=0x7f030012;
-    public static final int notification_small_icon_background_padding=0x7f030013;
-    public static final int notification_small_icon_size_as_large=0x7f030014;
-    public static final int notification_subtext_size=0x7f030015;
-    public static final int notification_top_pad=0x7f030016;
-    public static final int notification_top_pad_large_text=0x7f030017;
-    public static final int subtitle_corner_radius=0x7f030018;
-    public static final int subtitle_outline_width=0x7f030019;
-    public static final int subtitle_shadow_offset=0x7f03001a;
-    public static final int subtitle_shadow_radius=0x7f03001b;
+    public static final int notification_action_icon_size=0x7f030007;
+    public static final int notification_action_text_size=0x7f030008;
+    public static final int notification_big_circle_margin=0x7f030009;
+    public static final int notification_content_margin_start=0x7f03000a;
+    public static final int notification_large_icon_height=0x7f03000b;
+    public static final int notification_large_icon_width=0x7f03000c;
+    public static final int notification_main_column_padding_top=0x7f03000d;
+    public static final int notification_media_narrow_margin=0x7f03000e;
+    public static final int notification_right_icon_size=0x7f03000f;
+    public static final int notification_right_side_padding_top=0x7f030010;
+    public static final int notification_small_icon_background_padding=0x7f030011;
+    public static final int notification_small_icon_size_as_large=0x7f030012;
+    public static final int notification_subtext_size=0x7f030013;
+    public static final int notification_top_pad=0x7f030014;
+    public static final int notification_top_pad_large_text=0x7f030015;
   }
   public static final class drawable {
-    public static final int common_full_open_on_phone=0x7f040000;
-    public static final int common_google_signin_btn_icon_dark=0x7f040001;
-    public static final int common_google_signin_btn_icon_dark_focused=0x7f040002;
-    public static final int common_google_signin_btn_icon_dark_normal=0x7f040003;
-    public static final int common_google_signin_btn_icon_dark_normal_background=0x7f040004;
-    public static final int common_google_signin_btn_icon_disabled=0x7f040005;
-    public static final int common_google_signin_btn_icon_light=0x7f040006;
-    public static final int common_google_signin_btn_icon_light_focused=0x7f040007;
-    public static final int common_google_signin_btn_icon_light_normal=0x7f040008;
-    public static final int common_google_signin_btn_icon_light_normal_background=0x7f040009;
-    public static final int common_google_signin_btn_text_dark=0x7f04000a;
-    public static final int common_google_signin_btn_text_dark_focused=0x7f04000b;
-    public static final int common_google_signin_btn_text_dark_normal=0x7f04000c;
-    public static final int common_google_signin_btn_text_dark_normal_background=0x7f04000d;
-    public static final int common_google_signin_btn_text_disabled=0x7f04000e;
-    public static final int common_google_signin_btn_text_light=0x7f04000f;
-    public static final int common_google_signin_btn_text_light_focused=0x7f040010;
-    public static final int common_google_signin_btn_text_light_normal=0x7f040011;
-    public static final int common_google_signin_btn_text_light_normal_background=0x7f040012;
-    public static final int exo_controls_fastforward=0x7f040013;
-    public static final int exo_controls_fullscreen_enter=0x7f040014;
-    public static final int exo_controls_fullscreen_exit=0x7f040015;
-    public static final int exo_controls_next=0x7f040016;
-    public static final int exo_controls_pause=0x7f040017;
-    public static final int exo_controls_play=0x7f040018;
-    public static final int exo_controls_previous=0x7f040019;
-    public static final int exo_controls_repeat_all=0x7f04001a;
-    public static final int exo_controls_repeat_off=0x7f04001b;
-    public static final int exo_controls_repeat_one=0x7f04001c;
-    public static final int exo_controls_rewind=0x7f04001d;
-    public static final int exo_controls_shuffle=0x7f04001e;
-    public static final int exo_edit_mode_logo=0x7f04001f;
-    public static final int exo_icon_fastforward=0x7f040020;
-    public static final int exo_icon_next=0x7f040021;
-    public static final int exo_icon_pause=0x7f040022;
-    public static final int exo_icon_play=0x7f040023;
-    public static final int exo_icon_previous=0x7f040024;
-    public static final int exo_icon_rewind=0x7f040025;
-    public static final int exo_icon_stop=0x7f040026;
-    public static final int exo_notification_fastforward=0x7f040027;
-    public static final int exo_notification_next=0x7f040028;
-    public static final int exo_notification_pause=0x7f040029;
-    public static final int exo_notification_play=0x7f04002a;
-    public static final int exo_notification_previous=0x7f04002b;
-    public static final int exo_notification_rewind=0x7f04002c;
-    public static final int exo_notification_small_icon=0x7f04002d;
-    public static final int exo_notification_stop=0x7f04002e;
-    public static final int googleg_disabled_color_18=0x7f04002f;
-    public static final int googleg_standard_color_18=0x7f040030;
-    public static final int launch_background=0x7f040031;
-    public static final int notification_action_background=0x7f040032;
-    public static final int notification_bg=0x7f040033;
-    public static final int notification_bg_low=0x7f040034;
-    public static final int notification_bg_low_normal=0x7f040035;
-    public static final int notification_bg_low_pressed=0x7f040036;
-    public static final int notification_bg_normal=0x7f040037;
-    public static final int notification_bg_normal_pressed=0x7f040038;
-    public static final int notification_icon_background=0x7f040039;
-    public static final int notification_template_icon_bg=0x7f04003a;
-    public static final int notification_template_icon_low_bg=0x7f04003b;
-    public static final int notification_tile_bg=0x7f04003c;
-    public static final int notify_panel_notification_icon_bg=0x7f04003d;
+    public static final int launch_background=0x7f040000;
+    public static final int notification_action_background=0x7f040001;
+    public static final int notification_bg=0x7f040002;
+    public static final int notification_bg_low=0x7f040003;
+    public static final int notification_bg_low_normal=0x7f040004;
+    public static final int notification_bg_low_pressed=0x7f040005;
+    public static final int notification_bg_normal=0x7f040006;
+    public static final int notification_bg_normal_pressed=0x7f040007;
+    public static final int notification_icon_background=0x7f040008;
+    public static final int notification_template_icon_bg=0x7f040009;
+    public static final int notification_template_icon_low_bg=0x7f04000a;
+    public static final int notification_tile_bg=0x7f04000b;
+    public static final int notify_panel_notification_icon_bg=0x7f04000c;
   }
   public static final class id {
     public static final int accessibility_action_clickable_span=0x7f050000;
@@ -681,232 +215,71 @@ public final class R {
     public static final int accessibility_custom_action_7=0x7f05001e;
     public static final int accessibility_custom_action_8=0x7f05001f;
     public static final int accessibility_custom_action_9=0x7f050020;
-    public static final int action0=0x7f050021;
-    public static final int action_container=0x7f050022;
-    public static final int action_divider=0x7f050023;
-    public static final int action_image=0x7f050024;
-    public static final int action_text=0x7f050025;
-    public static final int actions=0x7f050026;
-    public static final int adjust_height=0x7f050027;
-    public static final int adjust_width=0x7f050028;
-    public static final int all=0x7f050029;
-    public static final int async=0x7f05002a;
-    public static final int auto=0x7f05002b;
-    public static final int blocking=0x7f05002c;
-    public static final int cancel_action=0x7f05002d;
-    public static final int chronometer=0x7f05002e;
-    public static final int dark=0x7f05002f;
-    public static final int dialog_button=0x7f050030;
-    public static final int end_padder=0x7f050031;
-    public static final int exo_artwork=0x7f050032;
-    public static final int exo_buffering=0x7f050033;
-    public static final int exo_content_frame=0x7f050034;
-    public static final int exo_controller=0x7f050035;
-    public static final int exo_controller_placeholder=0x7f050036;
-    public static final int exo_duration=0x7f050037;
-    public static final int exo_error_message=0x7f050038;
-    public static final int exo_ffwd=0x7f050039;
-    public static final int exo_next=0x7f05003a;
-    public static final int exo_overlay=0x7f05003b;
-    public static final int exo_pause=0x7f05003c;
-    public static final int exo_play=0x7f05003d;
-    public static final int exo_position=0x7f05003e;
-    public static final int exo_prev=0x7f05003f;
-    public static final int exo_progress=0x7f050040;
-    public static final int exo_repeat_toggle=0x7f050041;
-    public static final int exo_rew=0x7f050042;
-    public static final int exo_shuffle=0x7f050043;
-    public static final int exo_shutter=0x7f050044;
-    public static final int exo_subtitles=0x7f050045;
-    public static final int exo_track_selection_view=0x7f050046;
-    public static final int fill=0x7f050047;
-    public static final int fit=0x7f050048;
-    public static final int fixed_height=0x7f050049;
-    public static final int fixed_width=0x7f05004a;
-    public static final int forever=0x7f05004b;
-    public static final int hybrid=0x7f05004c;
-    public static final int icon=0x7f05004d;
-    public static final int icon_group=0x7f05004e;
-    public static final int icon_only=0x7f05004f;
-    public static final int info=0x7f050050;
-    public static final int italic=0x7f050051;
-    public static final int light=0x7f050052;
-    public static final int line1=0x7f050053;
-    public static final int line3=0x7f050054;
-    public static final int media_actions=0x7f050055;
-    public static final int none=0x7f050056;
-    public static final int normal=0x7f050057;
-    public static final int notification_background=0x7f050058;
-    public static final int notification_main_column=0x7f050059;
-    public static final int notification_main_column_container=0x7f05005a;
-    public static final int one=0x7f05005b;
-    public static final int right_icon=0x7f05005c;
-    public static final int right_side=0x7f05005d;
-    public static final int satellite=0x7f05005e;
-    public static final int standard=0x7f05005f;
-    public static final int status_bar_latest_event_content=0x7f050060;
-    public static final int surface_view=0x7f050061;
-    public static final int tag_accessibility_actions=0x7f050062;
-    public static final int tag_accessibility_clickable_spans=0x7f050063;
-    public static final int tag_accessibility_heading=0x7f050064;
-    public static final int tag_accessibility_pane_title=0x7f050065;
-    public static final int tag_screen_reader_focusable=0x7f050066;
-    public static final int tag_transition_group=0x7f050067;
-    public static final int tag_unhandled_key_event_manager=0x7f050068;
-    public static final int tag_unhandled_key_listeners=0x7f050069;
-    public static final int terrain=0x7f05006a;
-    public static final int text=0x7f05006b;
-    public static final int text2=0x7f05006c;
-    public static final int texture_view=0x7f05006d;
-    public static final int time=0x7f05006e;
-    public static final int title=0x7f05006f;
-    public static final int wide=0x7f050070;
-    public static final int zoom=0x7f050071;
+    public static final int action_container=0x7f050021;
+    public static final int action_divider=0x7f050022;
+    public static final int action_image=0x7f050023;
+    public static final int action_text=0x7f050024;
+    public static final int actions=0x7f050025;
+    public static final int async=0x7f050026;
+    public static final int blocking=0x7f050027;
+    public static final int chronometer=0x7f050028;
+    public static final int dialog_button=0x7f050029;
+    public static final int forever=0x7f05002a;
+    public static final int icon=0x7f05002b;
+    public static final int icon_group=0x7f05002c;
+    public static final int info=0x7f05002d;
+    public static final int italic=0x7f05002e;
+    public static final int line1=0x7f05002f;
+    public static final int line3=0x7f050030;
+    public static final int normal=0x7f050031;
+    public static final int notification_background=0x7f050032;
+    public static final int notification_main_column=0x7f050033;
+    public static final int notification_main_column_container=0x7f050034;
+    public static final int right_icon=0x7f050035;
+    public static final int right_side=0x7f050036;
+    public static final int tag_accessibility_actions=0x7f050037;
+    public static final int tag_accessibility_clickable_spans=0x7f050038;
+    public static final int tag_accessibility_heading=0x7f050039;
+    public static final int tag_accessibility_pane_title=0x7f05003a;
+    public static final int tag_screen_reader_focusable=0x7f05003b;
+    public static final int tag_transition_group=0x7f05003c;
+    public static final int tag_unhandled_key_event_manager=0x7f05003d;
+    public static final int tag_unhandled_key_listeners=0x7f05003e;
+    public static final int text=0x7f05003f;
+    public static final int text2=0x7f050040;
+    public static final int time=0x7f050041;
+    public static final int title=0x7f050042;
   }
   public static final class integer {
-    public static final int cancel_button_image_alpha=0x7f060000;
-    public static final int google_play_services_version=0x7f060001;
-    public static final int status_bar_notification_info_maxnum=0x7f060002;
+    public static final int status_bar_notification_info_maxnum=0x7f060000;
   }
   public static final class layout {
     public static final int custom_dialog=0x7f070000;
-    public static final int exo_list_divider=0x7f070001;
-    public static final int exo_playback_control_view=0x7f070002;
-    public static final int exo_player_control_view=0x7f070003;
-    public static final int exo_player_view=0x7f070004;
-    public static final int exo_simple_player_view=0x7f070005;
-    public static final int exo_track_selection_dialog=0x7f070006;
-    public static final int notification_action=0x7f070007;
-    public static final int notification_action_tombstone=0x7f070008;
-    public static final int notification_media_action=0x7f070009;
-    public static final int notification_media_cancel_action=0x7f07000a;
-    public static final int notification_template_big_media=0x7f07000b;
-    public static final int notification_template_big_media_custom=0x7f07000c;
-    public static final int notification_template_big_media_narrow=0x7f07000d;
-    public static final int notification_template_big_media_narrow_custom=0x7f07000e;
-    public static final int notification_template_custom_big=0x7f07000f;
-    public static final int notification_template_icon_group=0x7f070010;
-    public static final int notification_template_lines_media=0x7f070011;
-    public static final int notification_template_media=0x7f070012;
-    public static final int notification_template_media_custom=0x7f070013;
-    public static final int notification_template_part_chronometer=0x7f070014;
-    public static final int notification_template_part_time=0x7f070015;
+    public static final int notification_action=0x7f070001;
+    public static final int notification_action_tombstone=0x7f070002;
+    public static final int notification_template_custom_big=0x7f070003;
+    public static final int notification_template_icon_group=0x7f070004;
+    public static final int notification_template_part_chronometer=0x7f070005;
+    public static final int notification_template_part_time=0x7f070006;
   }
   public static final class mipmap {
     public static final int ic_launcher=0x7f080000;
   }
   public static final class string {
-    public static final int common_google_play_services_enable_button=0x7f090000;
-    public static final int common_google_play_services_enable_text=0x7f090001;
-    public static final int common_google_play_services_enable_title=0x7f090002;
-    public static final int common_google_play_services_install_button=0x7f090003;
-    public static final int common_google_play_services_install_text=0x7f090004;
-    public static final int common_google_play_services_install_title=0x7f090005;
-    public static final int common_google_play_services_notification_channel_name=0x7f090006;
-    public static final int common_google_play_services_notification_ticker=0x7f090007;
-    public static final int common_google_play_services_unknown_issue=0x7f090008;
-    public static final int common_google_play_services_unsupported_text=0x7f090009;
-    public static final int common_google_play_services_update_button=0x7f09000a;
-    public static final int common_google_play_services_update_text=0x7f09000b;
-    public static final int common_google_play_services_update_title=0x7f09000c;
-    public static final int common_google_play_services_updating_text=0x7f09000d;
-    public static final int common_google_play_services_wear_update_text=0x7f09000e;
-    public static final int common_open_on_phone=0x7f09000f;
-    public static final int common_signin_button_text=0x7f090010;
-    public static final int common_signin_button_text_long=0x7f090011;
-    public static final int exo_controls_fastforward_description=0x7f090012;
-    public static final int exo_controls_fullscreen_description=0x7f090013;
-    public static final int exo_controls_next_description=0x7f090014;
-    public static final int exo_controls_pause_description=0x7f090015;
-    public static final int exo_controls_play_description=0x7f090016;
-    public static final int exo_controls_previous_description=0x7f090017;
-    public static final int exo_controls_repeat_all_description=0x7f090018;
-    public static final int exo_controls_repeat_off_description=0x7f090019;
-    public static final int exo_controls_repeat_one_description=0x7f09001a;
-    public static final int exo_controls_rewind_description=0x7f09001b;
-    public static final int exo_controls_shuffle_description=0x7f09001c;
-    public static final int exo_controls_stop_description=0x7f09001d;
-    public static final int exo_download_completed=0x7f09001e;
-    public static final int exo_download_description=0x7f09001f;
-    public static final int exo_download_downloading=0x7f090020;
-    public static final int exo_download_failed=0x7f090021;
-    public static final int exo_download_notification_channel_name=0x7f090022;
-    public static final int exo_download_removing=0x7f090023;
-    public static final int exo_item_list=0x7f090024;
-    public static final int exo_track_bitrate=0x7f090025;
-    public static final int exo_track_mono=0x7f090026;
-    public static final int exo_track_resolution=0x7f090027;
-    public static final int exo_track_selection_auto=0x7f090028;
-    public static final int exo_track_selection_none=0x7f090029;
-    public static final int exo_track_selection_title_audio=0x7f09002a;
-    public static final int exo_track_selection_title_text=0x7f09002b;
-    public static final int exo_track_selection_title_video=0x7f09002c;
-    public static final int exo_track_stereo=0x7f09002d;
-    public static final int exo_track_surround=0x7f09002e;
-    public static final int exo_track_surround_5_point_1=0x7f09002f;
-    public static final int exo_track_surround_7_point_1=0x7f090030;
-    public static final int exo_track_unknown=0x7f090031;
-    public static final int status_bar_notification_info_overflow=0x7f090032;
+    public static final int status_bar_notification_info_overflow=0x7f090000;
   }
   public static final class style {
-    public static final int ExoMediaButton=0x7f0a0000;
-    public static final int ExoMediaButton_FastForward=0x7f0a0001;
-    public static final int ExoMediaButton_Next=0x7f0a0002;
-    public static final int ExoMediaButton_Pause=0x7f0a0003;
-    public static final int ExoMediaButton_Play=0x7f0a0004;
-    public static final int ExoMediaButton_Previous=0x7f0a0005;
-    public static final int ExoMediaButton_Rewind=0x7f0a0006;
-    public static final int ExoMediaButton_Shuffle=0x7f0a0007;
-    public static final int LaunchTheme=0x7f0a0008;
-    public static final int NormalTheme=0x7f0a0009;
-    public static final int TextAppearance_Compat_Notification=0x7f0a000a;
-    public static final int TextAppearance_Compat_Notification_Info=0x7f0a000b;
-    public static final int TextAppearance_Compat_Notification_Info_Media=0x7f0a000c;
-    public static final int TextAppearance_Compat_Notification_Line2=0x7f0a000d;
-    public static final int TextAppearance_Compat_Notification_Line2_Media=0x7f0a000e;
-    public static final int TextAppearance_Compat_Notification_Media=0x7f0a000f;
-    public static final int TextAppearance_Compat_Notification_Time=0x7f0a0010;
-    public static final int TextAppearance_Compat_Notification_Time_Media=0x7f0a0011;
-    public static final int TextAppearance_Compat_Notification_Title=0x7f0a0012;
-    public static final int TextAppearance_Compat_Notification_Title_Media=0x7f0a0013;
-    public static final int Widget_Compat_NotificationActionContainer=0x7f0a0014;
-    public static final int Widget_Compat_NotificationActionText=0x7f0a0015;
+    public static final int LaunchTheme=0x7f0a0000;
+    public static final int NormalTheme=0x7f0a0001;
+    public static final int TextAppearance_Compat_Notification=0x7f0a0002;
+    public static final int TextAppearance_Compat_Notification_Info=0x7f0a0003;
+    public static final int TextAppearance_Compat_Notification_Line2=0x7f0a0004;
+    public static final int TextAppearance_Compat_Notification_Time=0x7f0a0005;
+    public static final int TextAppearance_Compat_Notification_Title=0x7f0a0006;
+    public static final int Widget_Compat_NotificationActionContainer=0x7f0a0007;
+    public static final int Widget_Compat_NotificationActionText=0x7f0a0008;
   }
   public static final class styleable {
-    /**
-     * Attributes that can be used with a AspectRatioFrameLayout.
-     * <p>Includes the following attributes:</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #AspectRatioFrameLayout_resize_mode com.justhabbo.justhabbo_fm:resize_mode}</code></td><td></td></tr>
-     * </table>
-     * @see #AspectRatioFrameLayout_resize_mode
-     */
-    public static final int[] AspectRatioFrameLayout={
-      0x7f01002d
-    };
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#resize_mode}
-     * attribute's value can be found in the {@link #AspectRatioFrameLayout} array.
-     *
-     * <p>Must be one of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>fill</td><td>3</td><td></td></tr>
-     * <tr><td>fit</td><td>0</td><td></td></tr>
-     * <tr><td>fixed_height</td><td>2</td><td></td></tr>
-     * <tr><td>fixed_width</td><td>1</td><td></td></tr>
-     * <tr><td>zoom</td><td>4</td><td></td></tr>
-     * </table>
-     *
-     * @attr name com.justhabbo.justhabbo_fm:resize_mode
-     */
-    public static final int AspectRatioFrameLayout_resize_mode=0;
     /**
      * Attributes that can be used with a ColorStateListItem.
      * <p>Includes the following attributes:</p>
@@ -923,7 +296,7 @@ public final class R {
      * @see #ColorStateListItem_alpha
      */
     public static final int[] ColorStateListItem={
-      0x010101a5, 0x0101031f, 0x7f010002
+      0x010101a5, 0x0101031f, 0x7f010000
     };
     /**
      * <p>
@@ -957,203 +330,6 @@ public final class R {
      */
     public static final int ColorStateListItem_alpha=2;
     /**
-     * Attributes that can be used with a DefaultTimeBar.
-     * <p>Includes the following attributes:</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #DefaultTimeBar_ad_marker_color com.justhabbo.justhabbo_fm:ad_marker_color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DefaultTimeBar_ad_marker_width com.justhabbo.justhabbo_fm:ad_marker_width}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DefaultTimeBar_bar_height com.justhabbo.justhabbo_fm:bar_height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DefaultTimeBar_buffered_color com.justhabbo.justhabbo_fm:buffered_color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DefaultTimeBar_played_ad_marker_color com.justhabbo.justhabbo_fm:played_ad_marker_color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DefaultTimeBar_played_color com.justhabbo.justhabbo_fm:played_color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DefaultTimeBar_scrubber_color com.justhabbo.justhabbo_fm:scrubber_color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DefaultTimeBar_scrubber_disabled_size com.justhabbo.justhabbo_fm:scrubber_disabled_size}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DefaultTimeBar_scrubber_dragged_size com.justhabbo.justhabbo_fm:scrubber_dragged_size}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DefaultTimeBar_scrubber_drawable com.justhabbo.justhabbo_fm:scrubber_drawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DefaultTimeBar_scrubber_enabled_size com.justhabbo.justhabbo_fm:scrubber_enabled_size}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DefaultTimeBar_touch_target_height com.justhabbo.justhabbo_fm:touch_target_height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DefaultTimeBar_unplayed_color com.justhabbo.justhabbo_fm:unplayed_color}</code></td><td></td></tr>
-     * </table>
-     * @see #DefaultTimeBar_ad_marker_color
-     * @see #DefaultTimeBar_ad_marker_width
-     * @see #DefaultTimeBar_bar_height
-     * @see #DefaultTimeBar_buffered_color
-     * @see #DefaultTimeBar_played_ad_marker_color
-     * @see #DefaultTimeBar_played_color
-     * @see #DefaultTimeBar_scrubber_color
-     * @see #DefaultTimeBar_scrubber_disabled_size
-     * @see #DefaultTimeBar_scrubber_dragged_size
-     * @see #DefaultTimeBar_scrubber_drawable
-     * @see #DefaultTimeBar_scrubber_enabled_size
-     * @see #DefaultTimeBar_touch_target_height
-     * @see #DefaultTimeBar_unplayed_color
-     */
-    public static final int[] DefaultTimeBar={
-      0x7f010000, 0x7f010001, 0x7f010005, 0x7f010006, 
-      0x7f010029, 0x7f01002a, 0x7f010030, 0x7f010031, 
-      0x7f010032, 0x7f010033, 0x7f010034, 0x7f01003a, 
-      0x7f010044
-    };
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#ad_marker_color}
-     * attribute's value can be found in the {@link #DefaultTimeBar} array.
-     *
-     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
-     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
-     * "<code>#<i>aarrggbb</i></code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:ad_marker_color
-     */
-    public static final int DefaultTimeBar_ad_marker_color=0;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#ad_marker_width}
-     * attribute's value can be found in the {@link #DefaultTimeBar} array.
-     *
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     *
-     * @attr name com.justhabbo.justhabbo_fm:ad_marker_width
-     */
-    public static final int DefaultTimeBar_ad_marker_width=1;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#bar_height}
-     * attribute's value can be found in the {@link #DefaultTimeBar} array.
-     *
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     *
-     * @attr name com.justhabbo.justhabbo_fm:bar_height
-     */
-    public static final int DefaultTimeBar_bar_height=2;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#buffered_color}
-     * attribute's value can be found in the {@link #DefaultTimeBar} array.
-     *
-     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
-     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
-     * "<code>#<i>aarrggbb</i></code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:buffered_color
-     */
-    public static final int DefaultTimeBar_buffered_color=3;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#played_ad_marker_color}
-     * attribute's value can be found in the {@link #DefaultTimeBar} array.
-     *
-     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
-     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
-     * "<code>#<i>aarrggbb</i></code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:played_ad_marker_color
-     */
-    public static final int DefaultTimeBar_played_ad_marker_color=4;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#played_color}
-     * attribute's value can be found in the {@link #DefaultTimeBar} array.
-     *
-     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
-     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
-     * "<code>#<i>aarrggbb</i></code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:played_color
-     */
-    public static final int DefaultTimeBar_played_color=5;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#scrubber_color}
-     * attribute's value can be found in the {@link #DefaultTimeBar} array.
-     *
-     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
-     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
-     * "<code>#<i>aarrggbb</i></code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:scrubber_color
-     */
-    public static final int DefaultTimeBar_scrubber_color=6;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#scrubber_disabled_size}
-     * attribute's value can be found in the {@link #DefaultTimeBar} array.
-     *
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     *
-     * @attr name com.justhabbo.justhabbo_fm:scrubber_disabled_size
-     */
-    public static final int DefaultTimeBar_scrubber_disabled_size=7;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#scrubber_dragged_size}
-     * attribute's value can be found in the {@link #DefaultTimeBar} array.
-     *
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     *
-     * @attr name com.justhabbo.justhabbo_fm:scrubber_dragged_size
-     */
-    public static final int DefaultTimeBar_scrubber_dragged_size=8;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#scrubber_drawable}
-     * attribute's value can be found in the {@link #DefaultTimeBar} array.
-     *
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:scrubber_drawable
-     */
-    public static final int DefaultTimeBar_scrubber_drawable=9;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#scrubber_enabled_size}
-     * attribute's value can be found in the {@link #DefaultTimeBar} array.
-     *
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     *
-     * @attr name com.justhabbo.justhabbo_fm:scrubber_enabled_size
-     */
-    public static final int DefaultTimeBar_scrubber_enabled_size=10;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#touch_target_height}
-     * attribute's value can be found in the {@link #DefaultTimeBar} array.
-     *
-     * <p>May be a dimension value, which is a floating point number appended with a
-     * unit such as "<code>14.5sp</code>".
-     * Available units are: px (pixels), dp (density-independent pixels),
-     * sp (scaled pixels based on preferred font size), in (inches), and
-     * mm (millimeters).
-     *
-     * @attr name com.justhabbo.justhabbo_fm:touch_target_height
-     */
-    public static final int DefaultTimeBar_touch_target_height=11;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#unplayed_color}
-     * attribute's value can be found in the {@link #DefaultTimeBar} array.
-     *
-     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
-     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
-     * "<code>#<i>aarrggbb</i></code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:unplayed_color
-     */
-    public static final int DefaultTimeBar_unplayed_color=12;
-    /**
      * Attributes that can be used with a FontFamily.
      * <p>Includes the following attributes:</p>
      * <table>
@@ -1175,8 +351,8 @@ public final class R {
      * @see #FontFamily_fontProviderQuery
      */
     public static final int[] FontFamily={
-      0x7f010015, 0x7f010016, 0x7f010017, 0x7f010018, 
-      0x7f010019, 0x7f01001a
+      0x7f010002, 0x7f010003, 0x7f010004, 0x7f010005, 
+      0x7f010006, 0x7f010007
     };
     /**
      * <p>
@@ -1312,8 +488,8 @@ public final class R {
      */
     public static final int[] FontFamilyFont={
       0x01010532, 0x01010533, 0x0101053f, 0x0101056f, 
-      0x01010570, 0x7f010014, 0x7f01001b, 0x7f01001c, 
-      0x7f01001d, 0x7f01003b
+      0x01010570, 0x7f010001, 0x7f010008, 0x7f010009, 
+      0x7f01000a, 0x7f01000b
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#font}
@@ -1689,794 +865,5 @@ public final class R {
      * @attr name android:offset
      */
     public static final int GradientColorItem_android_offset=1;
-    /**
-     * Attributes that can be used with a LoadingImageView.
-     * <p>Includes the following attributes:</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #LoadingImageView_circleCrop com.justhabbo.justhabbo_fm:circleCrop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LoadingImageView_imageAspectRatio com.justhabbo.justhabbo_fm:imageAspectRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust com.justhabbo.justhabbo_fm:imageAspectRatioAdjust}</code></td><td></td></tr>
-     * </table>
-     * @see #LoadingImageView_circleCrop
-     * @see #LoadingImageView_imageAspectRatio
-     * @see #LoadingImageView_imageAspectRatioAdjust
-     */
-    public static final int[] LoadingImageView={
-      0x7f01000f, 0x7f010020, 0x7f010021
-    };
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#circleCrop}
-     * attribute's value can be found in the {@link #LoadingImageView} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:circleCrop
-     */
-    public static final int LoadingImageView_circleCrop=0;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#imageAspectRatio}
-     * attribute's value can be found in the {@link #LoadingImageView} array.
-     *
-     * <p>May be a floating point value, such as "<code>1.2</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:imageAspectRatio
-     */
-    public static final int LoadingImageView_imageAspectRatio=1;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#imageAspectRatioAdjust}
-     * attribute's value can be found in the {@link #LoadingImageView} array.
-     *
-     * <p>Must be one of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>adjust_height</td><td>2</td><td></td></tr>
-     * <tr><td>adjust_width</td><td>1</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * </table>
-     *
-     * @attr name com.justhabbo.justhabbo_fm:imageAspectRatioAdjust
-     */
-    public static final int LoadingImageView_imageAspectRatioAdjust=2;
-    /**
-     * Attributes that can be used with a MapAttrs.
-     * <p>Includes the following attributes:</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #MapAttrs_ambientEnabled com.justhabbo.justhabbo_fm:ambientEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_cameraBearing com.justhabbo.justhabbo_fm:cameraBearing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_cameraMaxZoomPreference com.justhabbo.justhabbo_fm:cameraMaxZoomPreference}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_cameraMinZoomPreference com.justhabbo.justhabbo_fm:cameraMinZoomPreference}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_cameraTargetLat com.justhabbo.justhabbo_fm:cameraTargetLat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_cameraTargetLng com.justhabbo.justhabbo_fm:cameraTargetLng}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_cameraTilt com.justhabbo.justhabbo_fm:cameraTilt}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_cameraZoom com.justhabbo.justhabbo_fm:cameraZoom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_latLngBoundsNorthEastLatitude com.justhabbo.justhabbo_fm:latLngBoundsNorthEastLatitude}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_latLngBoundsNorthEastLongitude com.justhabbo.justhabbo_fm:latLngBoundsNorthEastLongitude}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_latLngBoundsSouthWestLatitude com.justhabbo.justhabbo_fm:latLngBoundsSouthWestLatitude}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_latLngBoundsSouthWestLongitude com.justhabbo.justhabbo_fm:latLngBoundsSouthWestLongitude}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_liteMode com.justhabbo.justhabbo_fm:liteMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_mapType com.justhabbo.justhabbo_fm:mapType}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_uiCompass com.justhabbo.justhabbo_fm:uiCompass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_uiMapToolbar com.justhabbo.justhabbo_fm:uiMapToolbar}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_uiRotateGestures com.justhabbo.justhabbo_fm:uiRotateGestures}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_uiScrollGestures com.justhabbo.justhabbo_fm:uiScrollGestures}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_uiScrollGesturesDuringRotateOrZoom com.justhabbo.justhabbo_fm:uiScrollGesturesDuringRotateOrZoom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_uiTiltGestures com.justhabbo.justhabbo_fm:uiTiltGestures}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_uiZoomControls com.justhabbo.justhabbo_fm:uiZoomControls}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_uiZoomGestures com.justhabbo.justhabbo_fm:uiZoomGestures}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_useViewLifecycle com.justhabbo.justhabbo_fm:useViewLifecycle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MapAttrs_zOrderOnTop com.justhabbo.justhabbo_fm:zOrderOnTop}</code></td><td></td></tr>
-     * </table>
-     * @see #MapAttrs_ambientEnabled
-     * @see #MapAttrs_cameraBearing
-     * @see #MapAttrs_cameraMaxZoomPreference
-     * @see #MapAttrs_cameraMinZoomPreference
-     * @see #MapAttrs_cameraTargetLat
-     * @see #MapAttrs_cameraTargetLng
-     * @see #MapAttrs_cameraTilt
-     * @see #MapAttrs_cameraZoom
-     * @see #MapAttrs_latLngBoundsNorthEastLatitude
-     * @see #MapAttrs_latLngBoundsNorthEastLongitude
-     * @see #MapAttrs_latLngBoundsSouthWestLatitude
-     * @see #MapAttrs_latLngBoundsSouthWestLongitude
-     * @see #MapAttrs_liteMode
-     * @see #MapAttrs_mapType
-     * @see #MapAttrs_uiCompass
-     * @see #MapAttrs_uiMapToolbar
-     * @see #MapAttrs_uiRotateGestures
-     * @see #MapAttrs_uiScrollGestures
-     * @see #MapAttrs_uiScrollGesturesDuringRotateOrZoom
-     * @see #MapAttrs_uiTiltGestures
-     * @see #MapAttrs_uiZoomControls
-     * @see #MapAttrs_uiZoomGestures
-     * @see #MapAttrs_useViewLifecycle
-     * @see #MapAttrs_zOrderOnTop
-     */
-    public static final int[] MapAttrs={
-      0x7f010003, 0x7f010008, 0x7f010009, 0x7f01000a, 
-      0x7f01000b, 0x7f01000c, 0x7f01000d, 0x7f01000e, 
-      0x7f010023, 0x7f010024, 0x7f010025, 0x7f010026, 
-      0x7f010027, 0x7f010028, 0x7f01003c, 0x7f01003d, 
-      0x7f01003e, 0x7f01003f, 0x7f010040, 0x7f010041, 
-      0x7f010042, 0x7f010043, 0x7f010045, 0x7f010048
-    };
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#ambientEnabled}
-     * attribute's value can be found in the {@link #MapAttrs} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:ambientEnabled
-     */
-    public static final int MapAttrs_ambientEnabled=0;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#cameraBearing}
-     * attribute's value can be found in the {@link #MapAttrs} array.
-     *
-     * <p>May be a floating point value, such as "<code>1.2</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:cameraBearing
-     */
-    public static final int MapAttrs_cameraBearing=1;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#cameraMaxZoomPreference}
-     * attribute's value can be found in the {@link #MapAttrs} array.
-     *
-     * <p>May be a floating point value, such as "<code>1.2</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:cameraMaxZoomPreference
-     */
-    public static final int MapAttrs_cameraMaxZoomPreference=2;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#cameraMinZoomPreference}
-     * attribute's value can be found in the {@link #MapAttrs} array.
-     *
-     * <p>May be a floating point value, such as "<code>1.2</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:cameraMinZoomPreference
-     */
-    public static final int MapAttrs_cameraMinZoomPreference=3;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#cameraTargetLat}
-     * attribute's value can be found in the {@link #MapAttrs} array.
-     *
-     * <p>May be a floating point value, such as "<code>1.2</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:cameraTargetLat
-     */
-    public static final int MapAttrs_cameraTargetLat=4;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#cameraTargetLng}
-     * attribute's value can be found in the {@link #MapAttrs} array.
-     *
-     * <p>May be a floating point value, such as "<code>1.2</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:cameraTargetLng
-     */
-    public static final int MapAttrs_cameraTargetLng=5;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#cameraTilt}
-     * attribute's value can be found in the {@link #MapAttrs} array.
-     *
-     * <p>May be a floating point value, such as "<code>1.2</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:cameraTilt
-     */
-    public static final int MapAttrs_cameraTilt=6;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#cameraZoom}
-     * attribute's value can be found in the {@link #MapAttrs} array.
-     *
-     * <p>May be a floating point value, such as "<code>1.2</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:cameraZoom
-     */
-    public static final int MapAttrs_cameraZoom=7;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#latLngBoundsNorthEastLatitude}
-     * attribute's value can be found in the {@link #MapAttrs} array.
-     *
-     * <p>May be a floating point value, such as "<code>1.2</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:latLngBoundsNorthEastLatitude
-     */
-    public static final int MapAttrs_latLngBoundsNorthEastLatitude=8;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#latLngBoundsNorthEastLongitude}
-     * attribute's value can be found in the {@link #MapAttrs} array.
-     *
-     * <p>May be a floating point value, such as "<code>1.2</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:latLngBoundsNorthEastLongitude
-     */
-    public static final int MapAttrs_latLngBoundsNorthEastLongitude=9;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#latLngBoundsSouthWestLatitude}
-     * attribute's value can be found in the {@link #MapAttrs} array.
-     *
-     * <p>May be a floating point value, such as "<code>1.2</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:latLngBoundsSouthWestLatitude
-     */
-    public static final int MapAttrs_latLngBoundsSouthWestLatitude=10;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#latLngBoundsSouthWestLongitude}
-     * attribute's value can be found in the {@link #MapAttrs} array.
-     *
-     * <p>May be a floating point value, such as "<code>1.2</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:latLngBoundsSouthWestLongitude
-     */
-    public static final int MapAttrs_latLngBoundsSouthWestLongitude=11;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#liteMode}
-     * attribute's value can be found in the {@link #MapAttrs} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:liteMode
-     */
-    public static final int MapAttrs_liteMode=12;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#mapType}
-     * attribute's value can be found in the {@link #MapAttrs} array.
-     *
-     * <p>Must be one of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>hybrid</td><td>4</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>normal</td><td>1</td><td></td></tr>
-     * <tr><td>satellite</td><td>2</td><td></td></tr>
-     * <tr><td>terrain</td><td>3</td><td></td></tr>
-     * </table>
-     *
-     * @attr name com.justhabbo.justhabbo_fm:mapType
-     */
-    public static final int MapAttrs_mapType=13;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#uiCompass}
-     * attribute's value can be found in the {@link #MapAttrs} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:uiCompass
-     */
-    public static final int MapAttrs_uiCompass=14;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#uiMapToolbar}
-     * attribute's value can be found in the {@link #MapAttrs} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:uiMapToolbar
-     */
-    public static final int MapAttrs_uiMapToolbar=15;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#uiRotateGestures}
-     * attribute's value can be found in the {@link #MapAttrs} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:uiRotateGestures
-     */
-    public static final int MapAttrs_uiRotateGestures=16;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#uiScrollGestures}
-     * attribute's value can be found in the {@link #MapAttrs} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:uiScrollGestures
-     */
-    public static final int MapAttrs_uiScrollGestures=17;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#uiScrollGesturesDuringRotateOrZoom}
-     * attribute's value can be found in the {@link #MapAttrs} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:uiScrollGesturesDuringRotateOrZoom
-     */
-    public static final int MapAttrs_uiScrollGesturesDuringRotateOrZoom=18;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#uiTiltGestures}
-     * attribute's value can be found in the {@link #MapAttrs} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:uiTiltGestures
-     */
-    public static final int MapAttrs_uiTiltGestures=19;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#uiZoomControls}
-     * attribute's value can be found in the {@link #MapAttrs} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:uiZoomControls
-     */
-    public static final int MapAttrs_uiZoomControls=20;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#uiZoomGestures}
-     * attribute's value can be found in the {@link #MapAttrs} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:uiZoomGestures
-     */
-    public static final int MapAttrs_uiZoomGestures=21;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#useViewLifecycle}
-     * attribute's value can be found in the {@link #MapAttrs} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:useViewLifecycle
-     */
-    public static final int MapAttrs_useViewLifecycle=22;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#zOrderOnTop}
-     * attribute's value can be found in the {@link #MapAttrs} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:zOrderOnTop
-     */
-    public static final int MapAttrs_zOrderOnTop=23;
-    /**
-     * Attributes that can be used with a PlayerControlView.
-     * <p>Includes the following attributes:</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #PlayerControlView_controller_layout_id com.justhabbo.justhabbo_fm:controller_layout_id}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerControlView_fastforward_increment com.justhabbo.justhabbo_fm:fastforward_increment}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerControlView_repeat_toggle_modes com.justhabbo.justhabbo_fm:repeat_toggle_modes}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerControlView_rewind_increment com.justhabbo.justhabbo_fm:rewind_increment}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerControlView_show_shuffle_button com.justhabbo.justhabbo_fm:show_shuffle_button}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerControlView_show_timeout com.justhabbo.justhabbo_fm:show_timeout}</code></td><td></td></tr>
-     * </table>
-     * @see #PlayerControlView_controller_layout_id
-     * @see #PlayerControlView_fastforward_increment
-     * @see #PlayerControlView_repeat_toggle_modes
-     * @see #PlayerControlView_rewind_increment
-     * @see #PlayerControlView_show_shuffle_button
-     * @see #PlayerControlView_show_timeout
-     */
-    public static final int[] PlayerControlView={
-      0x7f010011, 0x7f010013, 0x7f01002c, 0x7f01002e, 
-      0x7f010036, 0x7f010037
-    };
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#controller_layout_id}
-     * attribute's value can be found in the {@link #PlayerControlView} array.
-     *
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:controller_layout_id
-     */
-    public static final int PlayerControlView_controller_layout_id=0;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#fastforward_increment}
-     * attribute's value can be found in the {@link #PlayerControlView} array.
-     *
-     * <p>May be an integer value, such as "<code>100</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:fastforward_increment
-     */
-    public static final int PlayerControlView_fastforward_increment=1;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#repeat_toggle_modes}
-     * attribute's value can be found in the {@link #PlayerControlView} array.
-     *
-     * <p>Must be one or more (separated by '|') of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>all</td><td>2</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>one</td><td>1</td><td></td></tr>
-     * </table>
-     *
-     * @attr name com.justhabbo.justhabbo_fm:repeat_toggle_modes
-     */
-    public static final int PlayerControlView_repeat_toggle_modes=2;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#rewind_increment}
-     * attribute's value can be found in the {@link #PlayerControlView} array.
-     *
-     * <p>May be an integer value, such as "<code>100</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:rewind_increment
-     */
-    public static final int PlayerControlView_rewind_increment=3;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#show_shuffle_button}
-     * attribute's value can be found in the {@link #PlayerControlView} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:show_shuffle_button
-     */
-    public static final int PlayerControlView_show_shuffle_button=4;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#show_timeout}
-     * attribute's value can be found in the {@link #PlayerControlView} array.
-     *
-     * <p>May be an integer value, such as "<code>100</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:show_timeout
-     */
-    public static final int PlayerControlView_show_timeout=5;
-    /**
-     * Attributes that can be used with a PlayerView.
-     * <p>Includes the following attributes:</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #PlayerView_auto_show com.justhabbo.justhabbo_fm:auto_show}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_controller_layout_id com.justhabbo.justhabbo_fm:controller_layout_id}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_default_artwork com.justhabbo.justhabbo_fm:default_artwork}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_fastforward_increment com.justhabbo.justhabbo_fm:fastforward_increment}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_hide_during_ads com.justhabbo.justhabbo_fm:hide_during_ads}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_hide_on_touch com.justhabbo.justhabbo_fm:hide_on_touch}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_keep_content_on_player_reset com.justhabbo.justhabbo_fm:keep_content_on_player_reset}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_player_layout_id com.justhabbo.justhabbo_fm:player_layout_id}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_repeat_toggle_modes com.justhabbo.justhabbo_fm:repeat_toggle_modes}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_resize_mode com.justhabbo.justhabbo_fm:resize_mode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_rewind_increment com.justhabbo.justhabbo_fm:rewind_increment}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_show_buffering com.justhabbo.justhabbo_fm:show_buffering}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_show_shuffle_button com.justhabbo.justhabbo_fm:show_shuffle_button}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_show_timeout com.justhabbo.justhabbo_fm:show_timeout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_shutter_background_color com.justhabbo.justhabbo_fm:shutter_background_color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_surface_type com.justhabbo.justhabbo_fm:surface_type}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_use_artwork com.justhabbo.justhabbo_fm:use_artwork}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PlayerView_use_controller com.justhabbo.justhabbo_fm:use_controller}</code></td><td></td></tr>
-     * </table>
-     * @see #PlayerView_auto_show
-     * @see #PlayerView_controller_layout_id
-     * @see #PlayerView_default_artwork
-     * @see #PlayerView_fastforward_increment
-     * @see #PlayerView_hide_during_ads
-     * @see #PlayerView_hide_on_touch
-     * @see #PlayerView_keep_content_on_player_reset
-     * @see #PlayerView_player_layout_id
-     * @see #PlayerView_repeat_toggle_modes
-     * @see #PlayerView_resize_mode
-     * @see #PlayerView_rewind_increment
-     * @see #PlayerView_show_buffering
-     * @see #PlayerView_show_shuffle_button
-     * @see #PlayerView_show_timeout
-     * @see #PlayerView_shutter_background_color
-     * @see #PlayerView_surface_type
-     * @see #PlayerView_use_artwork
-     * @see #PlayerView_use_controller
-     */
-    public static final int[] PlayerView={
-      0x7f010004, 0x7f010011, 0x7f010012, 0x7f010013, 
-      0x7f01001e, 0x7f01001f, 0x7f010022, 0x7f01002b, 
-      0x7f01002c, 0x7f01002d, 0x7f01002e, 0x7f010035, 
-      0x7f010036, 0x7f010037, 0x7f010038, 0x7f010039, 
-      0x7f010046, 0x7f010047
-    };
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#auto_show}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:auto_show
-     */
-    public static final int PlayerView_auto_show=0;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#controller_layout_id}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:controller_layout_id
-     */
-    public static final int PlayerView_controller_layout_id=1;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#default_artwork}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:default_artwork
-     */
-    public static final int PlayerView_default_artwork=2;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#fastforward_increment}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>May be an integer value, such as "<code>100</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:fastforward_increment
-     */
-    public static final int PlayerView_fastforward_increment=3;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#hide_during_ads}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:hide_during_ads
-     */
-    public static final int PlayerView_hide_during_ads=4;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#hide_on_touch}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:hide_on_touch
-     */
-    public static final int PlayerView_hide_on_touch=5;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#keep_content_on_player_reset}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:keep_content_on_player_reset
-     */
-    public static final int PlayerView_keep_content_on_player_reset=6;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#player_layout_id}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:player_layout_id
-     */
-    public static final int PlayerView_player_layout_id=7;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#repeat_toggle_modes}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>Must be one or more (separated by '|') of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>all</td><td>2</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>one</td><td>1</td><td></td></tr>
-     * </table>
-     *
-     * @attr name com.justhabbo.justhabbo_fm:repeat_toggle_modes
-     */
-    public static final int PlayerView_repeat_toggle_modes=8;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#resize_mode}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>Must be one of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>fill</td><td>3</td><td></td></tr>
-     * <tr><td>fit</td><td>0</td><td></td></tr>
-     * <tr><td>fixed_height</td><td>2</td><td></td></tr>
-     * <tr><td>fixed_width</td><td>1</td><td></td></tr>
-     * <tr><td>zoom</td><td>4</td><td></td></tr>
-     * </table>
-     *
-     * @attr name com.justhabbo.justhabbo_fm:resize_mode
-     */
-    public static final int PlayerView_resize_mode=9;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#rewind_increment}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>May be an integer value, such as "<code>100</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:rewind_increment
-     */
-    public static final int PlayerView_rewind_increment=10;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#show_buffering}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:show_buffering
-     */
-    public static final int PlayerView_show_buffering=11;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#show_shuffle_button}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:show_shuffle_button
-     */
-    public static final int PlayerView_show_shuffle_button=12;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#show_timeout}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>May be an integer value, such as "<code>100</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:show_timeout
-     */
-    public static final int PlayerView_show_timeout=13;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#shutter_background_color}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
-     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
-     * "<code>#<i>aarrggbb</i></code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:shutter_background_color
-     */
-    public static final int PlayerView_shutter_background_color=14;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#surface_type}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>Must be one of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>surface_view</td><td>1</td><td></td></tr>
-     * <tr><td>texture_view</td><td>2</td><td></td></tr>
-     * </table>
-     *
-     * @attr name com.justhabbo.justhabbo_fm:surface_type
-     */
-    public static final int PlayerView_surface_type=15;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#use_artwork}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:use_artwork
-     */
-    public static final int PlayerView_use_artwork=16;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#use_controller}
-     * attribute's value can be found in the {@link #PlayerView} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name com.justhabbo.justhabbo_fm:use_controller
-     */
-    public static final int PlayerView_use_controller=17;
-    /**
-     * Attributes that can be used with a SignInButton.
-     * <p>Includes the following attributes:</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #SignInButton_buttonSize com.justhabbo.justhabbo_fm:buttonSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SignInButton_colorScheme com.justhabbo.justhabbo_fm:colorScheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SignInButton_scopeUris com.justhabbo.justhabbo_fm:scopeUris}</code></td><td></td></tr>
-     * </table>
-     * @see #SignInButton_buttonSize
-     * @see #SignInButton_colorScheme
-     * @see #SignInButton_scopeUris
-     */
-    public static final int[] SignInButton={
-      0x7f010007, 0x7f010010, 0x7f01002f
-    };
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#buttonSize}
-     * attribute's value can be found in the {@link #SignInButton} array.
-     *
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     * <p>Must be one of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>icon_only</td><td>2</td><td></td></tr>
-     * <tr><td>standard</td><td>0</td><td></td></tr>
-     * <tr><td>wide</td><td>1</td><td></td></tr>
-     * </table>
-     *
-     * @attr name com.justhabbo.justhabbo_fm:buttonSize
-     */
-    public static final int SignInButton_buttonSize=0;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#colorScheme}
-     * attribute's value can be found in the {@link #SignInButton} array.
-     *
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     * <p>Must be one of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>auto</td><td>2</td><td></td></tr>
-     * <tr><td>dark</td><td>0</td><td></td></tr>
-     * <tr><td>light</td><td>1</td><td></td></tr>
-     * </table>
-     *
-     * @attr name com.justhabbo.justhabbo_fm:colorScheme
-     */
-    public static final int SignInButton_colorScheme=1;
-    /**
-     * <p>This symbol is the offset where the {@link com.justhabbo.justhabbo_fm.R.attr#scopeUris}
-     * attribute's value can be found in the {@link #SignInButton} array.
-     *
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     * <p>May be a string value, using '\\;' to escape characters such as
-     * '\\n' or '\\uxxxx' for a unicode character;
-     *
-     * @attr name com.justhabbo.justhabbo_fm:scopeUris
-     */
-    public static final int SignInButton_scopeUris=2;
   }
 }
