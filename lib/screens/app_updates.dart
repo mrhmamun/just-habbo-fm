@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:justhabbo_fm/home/home_page.dart';
 import 'package:justhabbo_fm/widgets/bottomInfoBar.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class AppUpdates extends StatefulWidget {
   @override
@@ -9,6 +11,26 @@ class AppUpdates extends StatefulWidget {
 }
 
 class _AppUpdatesState extends State<AppUpdates> {
+
+
+  _launchPlayStore() async {
+    const url = 'https://play.google.com/store/search?q=Earth%20cam&c=apps';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+  _launchAppleStore() async {
+    const url = 'https://appstoreconnect.apple.com';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -77,8 +99,8 @@ class _AppUpdatesState extends State<AppUpdates> {
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
-                        fontSize: 15)),
-                SizedBox(height: 30,),
+                        fontSize: 20)),
+                SizedBox(height: 10,),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -86,16 +108,22 @@ class _AppUpdatesState extends State<AppUpdates> {
                     Container(
                       height: 80,
                       child: GestureDetector(
-                        onTap: null,
-                        child: Image.asset('assets/images/android.png'),
+                        onTap:(){
+                          _launchPlayStore();
+                        },
+                        child:
+                        Icon(Icons.android,size: 50,color: Colors.white,),
                       ),
                     ),
-                    SizedBox(width: 20,),
+                    SizedBox(width: 50,),
                     Container(
-                      height: 70,
+                      height: 80,
                       child: GestureDetector(
-                        onTap: null,
-                        child: Image.asset('assets/images/apple.png'),
+                        onTap: (){
+                          _launchAppleStore();
+                        },
+                        child:
+                        Icon(FontAwesomeIcons.apple,size: 55,color: Colors.white,),
                       ),
                     ),
                   ],

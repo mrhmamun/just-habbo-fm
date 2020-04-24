@@ -13,8 +13,9 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
-//  String url = "http://server-23.stream-server.nl:8438";
-  String url = "https://178.79.134.144/radio/8000/radio.mp3";
+  String url = "https://server-23.stream-server.nl:8438";
+//  String url = "https://178.79.134.144/radio/8000/radio.mp3";
+//  String url = "https://tunein.com/artist/Url-m82123";
 
   bool isPlaying = false;
   bool isVisible = true;
@@ -70,7 +71,7 @@ class _HomePageState extends State<HomePage> {
             },
           ),
           headerBtn(
-            text: 'Contact',
+            text: 'More',
             onPressed: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => SocialMedia()));

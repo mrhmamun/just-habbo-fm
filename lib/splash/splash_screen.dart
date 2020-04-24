@@ -4,7 +4,6 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:justhabbo_fm/home/home_page.dart';
-import 'package:justhabbo_fm/services/firebase_service.dart';
 import 'package:justhabbo_fm/widgets/bottomInfoBar.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -21,7 +20,6 @@ class _SplashScreenState extends State<SplashScreen>
 
   @override
   void initState() {
-    signInAnonymously();
     _timer = Timer(Duration(seconds: 12), () {
       Navigator.push(
           context, MaterialPageRoute(builder: (context) => HomePage()));
@@ -130,8 +128,6 @@ class _SplashScreenState extends State<SplashScreen>
         child: Center(
           child: GestureDetector(
             onTap: () {
-              // ignore: unnecessary_statements
-              signInAnonymously;
               Navigator.of(context)
                   .push(MaterialPageRoute(builder: (context) => HomePage()));
             },
