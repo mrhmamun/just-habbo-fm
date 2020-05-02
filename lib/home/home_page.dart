@@ -16,14 +16,16 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
+  final String url = 'http://server-23.stream-server.nl:8438';
+//  final String url = 'https://178.79.134.144/radio/8000/radio.mp3';
+
   AudioPlayer _player;
   @override
   void initState() {
     super.initState();
     _player = AudioPlayer();
 
-    _player.setUrl(
-        "http://server-23.stream-server.nl:8438/")
+    _player.setUrl(url)
         .catchError((error) {
       // catch audio error ex: 404 url, wrong url ...
       print(error);

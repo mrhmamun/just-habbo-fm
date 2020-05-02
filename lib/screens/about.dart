@@ -28,14 +28,6 @@ JustHabbo has some exciting plans to develop and enhance the app, so be sure to 
       appBar: AppBar(
         backgroundColor: Color(0xFF414141),
         centerTitle: true,
-        actions: [
-          IconButton(
-              icon: Icon(Icons.home),
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => HomePage()));
-              }),
-        ],
         title: Text(
           "About JustHabbo",
           style: GoogleFonts.lobster(

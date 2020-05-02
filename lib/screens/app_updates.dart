@@ -14,7 +14,7 @@ class _AppUpdatesState extends State<AppUpdates> {
 
 
   _launchPlayStore() async {
-    const url = 'https://play.google.com/store/search?q=Earth%20cam&c=apps';
+    const url = 'https://play.google.com/store/search?q=just%20habbo&c=apps';
     if (await canLaunch(url)) {
       await launch(url);
     } else {
@@ -38,14 +38,6 @@ class _AppUpdatesState extends State<AppUpdates> {
       appBar: AppBar(
         backgroundColor: Color(0xFF414141),
         centerTitle: true,
-        actions: [
-          IconButton(
-              icon: Icon(Icons.home),
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => HomePage()));
-              }),
-        ],
         title: Text(
           "App Updates",
           style: GoogleFonts.lobster(

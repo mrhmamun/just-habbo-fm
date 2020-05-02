@@ -73,15 +73,6 @@ class _MoreState extends State<More> {
       appBar: AppBar(
         backgroundColor: Color(0xFF414141),
         centerTitle: true,
-        actions: [
-          IconButton(
-              icon: Icon(Icons.home),
-              onPressed: () {
-                Navigator.pop(context);
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (_) => HomePage()));
-              }),
-        ],
         title: Text(
           "More",
           style: GoogleFonts.lobster(
