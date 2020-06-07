@@ -10,7 +10,7 @@ class About extends StatefulWidget {
 
 class _AboutState extends State<About> {
   final String text =
-      "JustHabbo Is an International unofficial fanssite for the world of Habbo providing 24/7 radio, events, discussions, competitions and More.";
+      "JustHabbo Is an International unofficial fan site for the world of Habbo providing 24/7 radio, events, discussions, competitions and More.";
 
   final String text1 =
       "JustHabbo was started back In 2012 by Richard, Andrew and Rue however due to unforeseen circumstances they had to close the Site.";

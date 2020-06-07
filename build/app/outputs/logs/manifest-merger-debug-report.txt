@@ -24,7 +24,7 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/mamun/.gra
 MERGED from [com.google.android.exoplayer:exoplayer-dash:2.11.4] /Users/mamun/.gradle/caches/transforms-2/files-2.1/1f142aba60ef57eb899254708baad1a8/exoplayer-dash-2.11.4/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.exoplayer:exoplayer-hls:2.11.4] /Users/mamun/.gradle/caches/transforms-2/files-2.1/c236ce97f85cacf23f2005bc89a1e614/exoplayer-hls-2.11.4/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.11.4] /Users/mamun/.gradle/caches/transforms-2/files-2.1/a654f5a4867f14061a074357aa6b2ce1/exoplayer-smoothstreaming-2.11.4/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.11.4] /Users/mamun/.gradle/caches/transforms-2/files-2.1/14c154dccde99373819752d7f4357348/jetified-exoplayer-core-2.11.4/AndroidManifest.xml:17:1-26:12
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.11.4] /Users/mamun/.gradle/caches/transforms-2/files-2.1/61c65668f30983f2525e3472b721a1b4/jetified-exoplayer-core-2.11.4/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/077300052aa327ee6fc9bbb0ce309b24/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/3a7eb299570065a3866b140e1a95969b/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/b80fad55c42c418cc210e235056767fb/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
@@ -153,8 +153,8 @@ MERGED from [com.google.android.exoplayer:exoplayer-hls:2.11.4] /Users/mamun/.gr
 MERGED from [com.google.android.exoplayer:exoplayer-hls:2.11.4] /Users/mamun/.gradle/caches/transforms-2/files-2.1/c236ce97f85cacf23f2005bc89a1e614/exoplayer-hls-2.11.4/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.11.4] /Users/mamun/.gradle/caches/transforms-2/files-2.1/a654f5a4867f14061a074357aa6b2ce1/exoplayer-smoothstreaming-2.11.4/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.11.4] /Users/mamun/.gradle/caches/transforms-2/files-2.1/a654f5a4867f14061a074357aa6b2ce1/exoplayer-smoothstreaming-2.11.4/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.11.4] /Users/mamun/.gradle/caches/transforms-2/files-2.1/14c154dccde99373819752d7f4357348/jetified-exoplayer-core-2.11.4/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.11.4] /Users/mamun/.gradle/caches/transforms-2/files-2.1/14c154dccde99373819752d7f4357348/jetified-exoplayer-core-2.11.4/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.11.4] /Users/mamun/.gradle/caches/transforms-2/files-2.1/61c65668f30983f2525e3472b721a1b4/jetified-exoplayer-core-2.11.4/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.11.4] /Users/mamun/.gradle/caches/transforms-2/files-2.1/61c65668f30983f2525e3472b721a1b4/jetified-exoplayer-core-2.11.4/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/077300052aa327ee6fc9bbb0ce309b24/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/077300052aa327ee6fc9bbb0ce309b24/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/mamun/.gradle/caches/transforms-2/files-2.1/3a7eb299570065a3866b140e1a95969b/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
@@ -178,6 +178,6 @@ ADDED from [:url_launcher] /Users/mamun/Developer/githubProjects/Flutter/just-ha
 	android:name
 		ADDED from [:url_launcher] /Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.exoplayer:exoplayer-core:2.11.4] /Users/mamun/.gradle/caches/transforms-2/files-2.1/14c154dccde99373819752d7f4357348/jetified-exoplayer-core-2.11.4/AndroidManifest.xml:24:5-79
+ADDED from [com.google.android.exoplayer:exoplayer-core:2.11.4] /Users/mamun/.gradle/caches/transforms-2/files-2.1/61c65668f30983f2525e3472b721a1b4/jetified-exoplayer-core-2.11.4/AndroidManifest.xml:24:5-79
 	android:name
-		ADDED from [com.google.android.exoplayer:exoplayer-core:2.11.4] /Users/mamun/.gradle/caches/transforms-2/files-2.1/14c154dccde99373819752d7f4357348/jetified-exoplayer-core-2.11.4/AndroidManifest.xml:24:22-76
+		ADDED from [com.google.android.exoplayer:exoplayer-core:2.11.4] /Users/mamun/.gradle/caches/transforms-2/files-2.1/61c65668f30983f2525e3472b721a1b4/jetified-exoplayer-core-2.11.4/AndroidManifest.xml:24:22-76

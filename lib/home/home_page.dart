@@ -1,4 +1,6 @@
 
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:just_audio/just_audio.dart';
@@ -16,8 +18,11 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
-  final String url = 'http://server-23.stream-server.nl:8438';
+  final String url = 'https://whsh4u-panel.com/proxy/xegagooy?mp=/live';
+//  final String url = 'http://server-23.stream-server.nl:8438';
 //  final String url = 'https://178.79.134.144/radio/8000/radio.mp3';
+
+
 
   AudioPlayer _player;
   @override
@@ -39,6 +44,17 @@ class _HomePageState extends State<HomePage> {
   }
 
 
+  //https://dart-lang.github.io/server/tls-ssl.html#connecting-to-an-https-resource
+
+_checkCertificates()async{
+  SecurityContext clientContext = new SecurityContext()
+    ..setTrustedCertificates('https://whsh4u-panel.com/proxy/xegagooy?mp=/live');
+  var client = new HttpClient(context: clientContext);
+  var request = await client.getUrl(
+      Uri.parse("https://whsh4u-panel.com/proxy/xegagooy?mp=/live"));
+  var response = await request.close();
+
+}
   //to skip ssl certificate
   //https://stackoverflow.com/questions/54104685/flutter-add-self-signed-certificate-from-asset-folder
 
@@ -149,39 +165,39 @@ class _HomePageState extends State<HomePage> {
                     )
                   ],
                 ),
-                StreamBuilder<FullAudioPlaybackState>(
-                  stream: _player.fullPlaybackStateStream,
-                  builder: (context, snapshot) {
-                    final fullState = snapshot.data;
-                    final state = fullState?.state;
-                    final buffering = fullState?.buffering;
-                    return Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        if (state == AudioPlaybackState.connecting ||
-                            buffering == true)
-                          Container(
-                            margin: EdgeInsets.all(8.0),
-                            width: 64.0,
-                            height: 64.0,
-                            child: CircularProgressIndicator(),
-                          )
-                        else if (state == AudioPlaybackState.playing)
-                          IconButton(
-                            icon: Icon(Icons.pause_circle_outline,color: Colors.white,),
-                            iconSize: 80.0,
-                            onPressed: _player.pause,
-                          )
-                        else
-                          IconButton(
-                            icon: Icon(Icons.play_circle_filled,color: Colors.white,),
-                            iconSize: 80.0,
-                            onPressed: _player.play,
-                          ),
-                      ],
-                    );
-                  },
-                ),
+              StreamBuilder<FullAudioPlaybackState>(
+                 stream: _player.fullPlaybackStateStream,
+                 builder: (context, snapshot) {
+                   final fullState = snapshot.data;
+                   final state = fullState?.state;
+                   final buffering = fullState?.buffering;
+                   return Row(
+                     mainAxisSize: MainAxisSize.min,
+                     children: [
+                       if (state == AudioPlaybackState.connecting ||
+                           buffering == true)
+                         Container(
+                           margin: EdgeInsets.all(8.0),
+                           width: 64.0,
+                           height: 64.0,
+                           child: CircularProgressIndicator(),
+                         )
+                       else if (state == AudioPlaybackState.playing)
+                         IconButton(
+                           icon: Icon(Icons.pause_circle_outline,color: Colors.white,),
+                           iconSize: 80.0,
+                           onPressed: _player.pause,
+                         )
+                       else
+                         IconButton(
+                           icon: Icon(Icons.play_circle_filled,color: Colors.white,),
+                           iconSize: 80.0,
+                           onPressed: _player.play,
+                         ),
+                     ],
+                   );
+                 },
+               ),
               ],
             ),
           ),
@@ -191,3 +207,4 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+

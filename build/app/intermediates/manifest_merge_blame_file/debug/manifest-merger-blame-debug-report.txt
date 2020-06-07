@@ -15,8 +15,8 @@
 14-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:8:5-66
 14-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:8:22-64
 15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-15-->[com.google.android.exoplayer:exoplayer-core:2.11.4] /Users/mamun/.gradle/caches/transforms-2/files-2.1/14c154dccde99373819752d7f4357348/jetified-exoplayer-core-2.11.4/AndroidManifest.xml:24:5-79
-15-->[com.google.android.exoplayer:exoplayer-core:2.11.4] /Users/mamun/.gradle/caches/transforms-2/files-2.1/14c154dccde99373819752d7f4357348/jetified-exoplayer-core-2.11.4/AndroidManifest.xml:24:22-76
+15-->[com.google.android.exoplayer:exoplayer-core:2.11.4] /Users/mamun/.gradle/caches/transforms-2/files-2.1/61c65668f30983f2525e3472b721a1b4/jetified-exoplayer-core-2.11.4/AndroidManifest.xml:24:5-79
+15-->[com.google.android.exoplayer:exoplayer-core:2.11.4] /Users/mamun/.gradle/caches/transforms-2/files-2.1/61c65668f30983f2525e3472b721a1b4/jetified-exoplayer-core-2.11.4/AndroidManifest.xml:24:22-76
 16
 17    <application
 17-->/Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:13:5-52:19
