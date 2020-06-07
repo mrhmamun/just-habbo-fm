@@ -1,194 +1,648 @@
-import 'package:flutter/material.dart';
-
-import 'package:just_audio/just_audio.dart';
-import 'package:rxdart/rxdart.dart';
-
-
-
-class NewApp extends StatefulWidget {
-  @override
-  _NewAppState createState() => _NewAppState();
-}
-
-class _NewAppState extends State<NewApp> {
-  final _volumeSubject = BehaviorSubject.seeded(1.0);
-  final _speedSubject = BehaviorSubject.seeded(1.0);
-  AudioPlayer _player;
-
-  @override
-  void initState() {
-    super.initState();
-//    AudioPlayer.setIosCategory(IosCategory.playback);
-    _player = AudioPlayer();
-    _player
-        .setUrl(
-        "https://whsh4u-panel.com/proxy/xegagooy?mp=/live")
-        .catchError((error) {
-      // catch audio error ex: 404 url, wrong url ...
-      print(error);
-    });
-  }
-
-  @override
-  void dispose() {
-    _player.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Audio Player Demo'),
-        ),
-        body: Center(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text("Science Friday"),
-              Text("Science Friday and WNYC Studios"),
-              StreamBuilder<FullAudioPlaybackState>(
-                stream: _player.fullPlaybackStateStream,
-                builder: (context, snapshot) {
-                  final fullState = snapshot.data;
-                  final state = fullState?.state;
-                  final buffering = fullState?.buffering;
-                  return Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      if (state == AudioPlaybackState.connecting ||
-                          buffering == true)
-                        Container(
-                          margin: EdgeInsets.all(8.0),
-                          width: 64.0,
-                          height: 64.0,
-                          child: CircularProgressIndicator(),
-                        )
-                      else if (state == AudioPlaybackState.playing)
-                        IconButton(
-                          icon: Icon(Icons.pause),
-                          iconSize: 64.0,
-                          onPressed: _player.pause,
-                        )
-                      else
-                        IconButton(
-                          icon: Icon(Icons.play_arrow),
-                          iconSize: 64.0,
-                          onPressed: _player.play,
-                        ),
-                      IconButton(
-                        icon: Icon(Icons.stop),
-                        iconSize: 64.0,
-                        onPressed: state == AudioPlaybackState.stopped ||
-                            state == AudioPlaybackState.none
-                            ? null
-                            : _player.stop,
-                      ),
-                    ],
-                  );
-                },
-              ),
-              Text("Track position"),
-              StreamBuilder<Duration>(
-                stream: _player.durationStream,
-                builder: (context, snapshot) {
-                  final duration = snapshot.data ?? Duration.zero;
-                  return StreamBuilder<Duration>(
-                    stream: _player.getPositionStream(),
-                    builder: (context, snapshot) {
-                      var position = snapshot.data ?? Duration.zero;
-                      if (position > duration) {
-                        position = duration;
-                      }
-                      return SeekBar(
-                        duration: duration,
-                        position: position,
-                        onChangeEnd: (newPosition) {
-                          _player.seek(newPosition);
-                        },
-                      );
-                    },
-                  );
-                },
-              ),
-              Text("Volume"),
-              StreamBuilder<double>(
-                stream: _volumeSubject.stream,
-                builder: (context, snapshot) => Slider(
-                  divisions: 20,
-                  min: 0.0,
-                  max: 2.0,
-                  value: snapshot.data ?? 1.0,
-                  onChanged: (value) {
-                    _volumeSubject.add(value);
-                    _player.setVolume(value);
-                  },
-                ),
-              ),
-              Text("Speed"),
-              StreamBuilder<double>(
-                stream: _speedSubject.stream,
-                builder: (context, snapshot) => Slider(
-                  divisions: 10,
-                  min: 0.5,
-                  max: 1.5,
-                  value: snapshot.data ?? 1.0,
-                  onChanged: (value) {
-                    _speedSubject.add(value);
-                    _player.setSpeed(value);
-                  },
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class SeekBar extends StatefulWidget {
-  final Duration duration;
-  final Duration position;
-  final ValueChanged<Duration> onChanged;
-  final ValueChanged<Duration> onChangeEnd;
-
-  SeekBar({
-    @required this.duration,
-    @required this.position,
-    this.onChanged,
-    this.onChangeEnd,
-  });
-
-  @override
-  _SeekBarState createState() => _SeekBarState();
-}
-
-class _SeekBarState extends State<SeekBar> {
-  double _dragValue;
-
-  @override
-  Widget build(BuildContext context) {
-    return Slider(
-      min: 0.0,
-      max: widget.duration.inMilliseconds.toDouble(),
-      value: _dragValue ?? widget.position.inMilliseconds.toDouble(),
-      onChanged: (value) {
-        setState(() {
-          _dragValue = value;
-        });
-        if (widget.onChanged != null) {
-          widget.onChanged(Duration(milliseconds: value.round()));
-        }
-      },
-      onChangeEnd: (value) {
-        _dragValue = null;
-        if (widget.onChangeEnd != null) {
-          widget.onChangeEnd(Duration(milliseconds: value.round()));
-        }
-      },
-    );
-  }
-}
+//import 'dart:async';
+//import 'dart:io';
+//import 'package:audioplayers/audio_cache.dart';
+//import 'package:audioplayers/audioplayers.dart';
+//import 'package:flutter/material.dart';
+//import 'package:http/http.dart';
+//import 'package:path_provider/path_provider.dart';
+//import 'package:provider/provider.dart';
+//import 'package:flutter/src/foundation/constants.dart';
+//
+//
+//typedef void OnError(Exception exception);
+//
+//
+//
+//const kUrl1 = 'https://whsh4u-panel.com/proxy/xegagooy?mp=/live';
+//const kUrl2 = 'hhttp://server-23.stream-server.nl:8438';
+//const kUrl3 = 'https://178.79.134.144/radio/8000/radio.mp3';
+//
+//class ExampleApp extends StatefulWidget {
+//  @override
+//  _ExampleAppState createState() => _ExampleAppState();
+//}
+//
+//class _ExampleAppState extends State<ExampleApp> {
+//  AudioCache audioCache = AudioCache();
+//  AudioPlayer advancedPlayer = AudioPlayer();
+//  String localFilePath;
+//
+//  @override
+//  void initState() {
+//    super.initState();
+//
+//    if (kIsWeb) {
+//      // Calls to Platform.isIOS fails on web
+//      return;
+//    }
+//    if (Platform.isIOS) {
+//      if (audioCache.fixedPlayer != null) {
+//        audioCache.fixedPlayer.startHeadlessService();
+//      }
+//      advancedPlayer.startHeadlessService();
+//    }
+//  }
+//
+//  Future _loadFile() async {
+//    final bytes = await readBytes(kUrl1);
+//    final dir = await getApplicationDocumentsDirectory();
+//    final file = File('${dir.path}/audio.mp3');
+//
+//    await file.writeAsBytes(bytes);
+//    if (await file.exists()) {
+//      setState(() {
+//        localFilePath = file.path;
+//      });
+//    }
+//  }
+//
+//  Widget remoteUrl() {
+//    return SingleChildScrollView(
+//      child: _Tab(children: [
+//        Text(
+//          'Sample 1 ($kUrl1)',
+//          key: Key('url1'),
+//          style: TextStyle(fontWeight: FontWeight.bold),
+//        ),
+//        PlayerWidget(url: kUrl1),
+//        Text(
+//          'Sample 2 ($kUrl2)',
+//          style: TextStyle(fontWeight: FontWeight.bold),
+//        ),
+//        PlayerWidget(url: kUrl2),
+//        Text(
+//          'Sample 3 ($kUrl3)',
+//          style: TextStyle(fontWeight: FontWeight.bold),
+//        ),
+//        PlayerWidget(url: kUrl3),
+//        Text(
+//          'Sample 4 (Low Latency mode) ($kUrl1)',
+//          style: TextStyle(fontWeight: FontWeight.bold),
+//        ),
+//        PlayerWidget(url: kUrl1, mode: PlayerMode.LOW_LATENCY),
+//      ]),
+//    );
+//  }
+//
+//  Widget localFile() {
+//    return _Tab(children: [
+//      Text('File: $kUrl1'),
+//      _Btn(txt: 'Download File to your Device', onPressed: () => _loadFile()),
+//      Text('Current local file path: $localFilePath'),
+//      localFilePath == null
+//          ? Container()
+//          : PlayerWidget(
+//        url: localFilePath,
+//      ),
+//    ]);
+//  }
+//
+//  Widget localAsset() {
+//    return SingleChildScrollView(
+//      child: _Tab(children: [
+//        Text('Play Local Asset \'audio.mp3\':'),
+//        _Btn(txt: 'Play', onPressed: () => audioCache.play('audio.mp3')),
+//        Text('Loop Local Asset \'audio.mp3\':'),
+//        _Btn(txt: 'Loop', onPressed: () => audioCache.loop('audio.mp3')),
+//        Text('Play Local Asset \'audio2.mp3\':'),
+//        _Btn(txt: 'Play', onPressed: () => audioCache.play('audio2.mp3')),
+//        Text('Play Local Asset In Low Latency \'audio.mp3\':'),
+//        _Btn(
+//            txt: 'Play',
+//            onPressed: () =>
+//                audioCache.play('audio.mp3', mode: PlayerMode.LOW_LATENCY)),
+//        Text('Play Local Asset Concurrently In Low Latency \'audio.mp3\':'),
+//        _Btn(
+//            txt: 'Play',
+//            onPressed: () async {
+//              await audioCache.play('audio.mp3', mode: PlayerMode.LOW_LATENCY);
+//              await audioCache.play('audio2.mp3', mode: PlayerMode.LOW_LATENCY);
+//            }),
+//        Text('Play Local Asset In Low Latency \'audio2.mp3\':'),
+//        _Btn(
+//            txt: 'Play',
+//            onPressed: () =>
+//                audioCache.play('audio2.mp3', mode: PlayerMode.LOW_LATENCY)),
+//        getLocalFileDuration(),
+//      ]),
+//    );
+//  }
+//
+//  Future<int> _getDuration() async {
+//    File audiofile = await audioCache.load('audio2.mp3');
+//    await advancedPlayer.setUrl(
+//      audiofile.path,
+//    );
+//    int duration = await Future.delayed(
+//        Duration(seconds: 2), () => advancedPlayer.getDuration());
+//    return duration;
+//  }
+//
+//  getLocalFileDuration() {
+//    return FutureBuilder<int>(
+//      future: _getDuration(),
+//      builder: (BuildContext context, AsyncSnapshot<int> snapshot) {
+//        switch (snapshot.connectionState) {
+//          case ConnectionState.none:
+//            return Text('No Connection...');
+//          case ConnectionState.active:
+//          case ConnectionState.waiting:
+//            return Text('Awaiting result...');
+//          case ConnectionState.done:
+//            if (snapshot.hasError) return Text('Error: ${snapshot.error}');
+//            return Text(
+//                'audio2.mp3 duration is: ${Duration(milliseconds: snapshot.data)}');
+//        }
+//        return null; // unreachable
+//      },
+//    );
+//  }
+//
+//  Widget notification() {
+//    return _Tab(children: [
+//      Text('Play notification sound: \'messenger.mp3\':'),
+//      _Btn(
+//          txt: 'Play',
+//          onPressed: () =>
+//              audioCache.play('messenger.mp3', isNotification: true)),
+//    ]);
+//  }
+//
+//  @override
+//  Widget build(BuildContext context) {
+//    return MultiProvider(
+//      providers: [
+//        StreamProvider<Duration>.value(
+//            initialData: Duration(),
+//            value: advancedPlayer.onAudioPositionChanged),
+//      ],
+//      child: DefaultTabController(
+//        length: 5,
+//        child: Scaffold(
+//          appBar: AppBar(
+//            bottom: TabBar(
+//              tabs: [
+//                Tab(text: 'Remote Url'),
+//                Tab(text: 'Local File'),
+//                Tab(text: 'Local Asset'),
+//                Tab(text: 'Notification'),
+//                Tab(text: 'Advanced'),
+//              ],
+//            ),
+//            title: Text('audioplayers Example'),
+//          ),
+//          body: TabBarView(
+//            children: [
+//              remoteUrl(),
+//              localFile(),
+//              localAsset(),
+//              notification(),
+//              Advanced(
+//                advancedPlayer: advancedPlayer,
+//              )
+//            ],
+//          ),
+//        ),
+//      ),
+//    );
+//  }
+//}
+//
+//class Advanced extends StatefulWidget {
+//  final AudioPlayer advancedPlayer;
+//
+//  const Advanced({Key key, this.advancedPlayer}) : super(key: key);
+//
+//  @override
+//  _AdvancedState createState() => _AdvancedState();
+//}
+//
+//class _AdvancedState extends State<Advanced> {
+//  bool seekDone;
+//
+//  @override
+//  void initState() {
+//    widget.advancedPlayer.seekCompleteHandler =
+//        (finished) => setState(() => seekDone = finished);
+//    super.initState();
+//  }
+//
+//  @override
+//  Widget build(BuildContext context) {
+//    final audioPosition = Provider.of<Duration>(context);
+//    return SingleChildScrollView(
+//      child: _Tab(
+//        children: [
+//          Column(children: [
+//            Text('Source Url'),
+//            Row(children: [
+//              _Btn(
+//                  txt: 'Audio 1',
+//                  onPressed: () => widget.advancedPlayer.setUrl(kUrl1)),
+//              _Btn(
+//                  txt: 'Audio 2',
+//                  onPressed: () => widget.advancedPlayer.setUrl(kUrl2)),
+//              _Btn(
+//                  txt: 'Stream',
+//                  onPressed: () => widget.advancedPlayer.setUrl(kUrl3)),
+//            ], mainAxisAlignment: MainAxisAlignment.spaceEvenly),
+//          ]),
+//          Column(children: [
+//            Text('Release Mode'),
+//            Row(children: [
+//              _Btn(
+//                  txt: 'STOP',
+//                  onPressed: () =>
+//                      widget.advancedPlayer.setReleaseMode(ReleaseMode.STOP)),
+//              _Btn(
+//                  txt: 'LOOP',
+//                  onPressed: () =>
+//                      widget.advancedPlayer.setReleaseMode(ReleaseMode.LOOP)),
+//              _Btn(
+//                  txt: 'RELEASE',
+//                  onPressed: () => widget.advancedPlayer
+//                      .setReleaseMode(ReleaseMode.RELEASE)),
+//            ], mainAxisAlignment: MainAxisAlignment.spaceEvenly),
+//          ]),
+//          Column(children: [
+//            Text('Volume'),
+//            Row(children: [
+//              _Btn(
+//                  txt: '0.0',
+//                  onPressed: () => widget.advancedPlayer.setVolume(0.0)),
+//              _Btn(
+//                  txt: '0.5',
+//                  onPressed: () => widget.advancedPlayer.setVolume(0.5)),
+//              _Btn(
+//                  txt: '1.0',
+//                  onPressed: () => widget.advancedPlayer.setVolume(1.0)),
+//              _Btn(
+//                  txt: '2.0',
+//                  onPressed: () => widget.advancedPlayer.setVolume(2.0)),
+//            ], mainAxisAlignment: MainAxisAlignment.spaceEvenly),
+//          ]),
+//          Column(children: [
+//            Text('Control'),
+//            Row(children: [
+//              _Btn(
+//                  txt: 'resume',
+//                  onPressed: () => widget.advancedPlayer.resume()),
+//              _Btn(
+//                  txt: 'pause', onPressed: () => widget.advancedPlayer.pause()),
+//              _Btn(txt: 'stop', onPressed: () => widget.advancedPlayer.stop()),
+//              _Btn(
+//                  txt: 'release',
+//                  onPressed: () => widget.advancedPlayer.release()),
+//            ], mainAxisAlignment: MainAxisAlignment.spaceEvenly),
+//          ]),
+//          Column(children: [
+//            Text('Seek in milliseconds'),
+//            Row(children: [
+//              _Btn(
+//                  txt: '100ms',
+//                  onPressed: () {
+//                    widget.advancedPlayer.seek(Duration(
+//                        milliseconds: audioPosition.inMilliseconds + 100));
+//                    setState(() => seekDone = false);
+//                  }),
+//              _Btn(
+//                  txt: '500ms',
+//                  onPressed: () {
+//                    widget.advancedPlayer.seek(Duration(
+//                        milliseconds: audioPosition.inMilliseconds + 500));
+//                    setState(() => seekDone = false);
+//                  }),
+//              _Btn(
+//                  txt: '1s',
+//                  onPressed: () {
+//                    widget.advancedPlayer
+//                        .seek(Duration(seconds: audioPosition.inSeconds + 1));
+//                    setState(() => seekDone = false);
+//                  }),
+//              _Btn(
+//                  txt: '1.5s',
+//                  onPressed: () {
+//                    widget.advancedPlayer.seek(Duration(
+//                        milliseconds: audioPosition.inMilliseconds + 1500));
+//                    setState(() => seekDone = false);
+//                  }),
+//            ], mainAxisAlignment: MainAxisAlignment.spaceEvenly),
+//          ]),
+//          Column(children: [
+//            Text('Rate'),
+//            Row(children: [
+//              _Btn(
+//                  txt: '0.5',
+//                  onPressed: () =>
+//                      widget.advancedPlayer.setPlaybackRate(playbackRate: 0.5)),
+//              _Btn(
+//                  txt: '1.0',
+//                  onPressed: () =>
+//                      widget.advancedPlayer.setPlaybackRate(playbackRate: 1.0)),
+//              _Btn(
+//                  txt: '1.5',
+//                  onPressed: () =>
+//                      widget.advancedPlayer.setPlaybackRate(playbackRate: 1.5)),
+//              _Btn(
+//                  txt: '2.0',
+//                  onPressed: () =>
+//                      widget.advancedPlayer.setPlaybackRate(playbackRate: 2.0)),
+//            ], mainAxisAlignment: MainAxisAlignment.spaceEvenly),
+//          ]),
+//          Text('Audio Position: ${audioPosition}'),
+//          seekDone == null
+//              ? SizedBox(
+//            width: 0,
+//            height: 0,
+//          )
+//              : Text(seekDone ? "Seek Done" : "Seeking..."),
+//        ],
+//      ),
+//    );
+//  }
+//}
+//
+//class _Tab extends StatelessWidget {
+//  final List<Widget> children;
+//
+//  const _Tab({Key key, this.children}) : super(key: key);
+//
+//  @override
+//  Widget build(BuildContext context) {
+//    return Center(
+//      child: Container(
+//        alignment: Alignment.topCenter,
+//        padding: EdgeInsets.all(16.0),
+//        child: SingleChildScrollView(
+//          child: Column(
+//            children: children
+//                .map((w) => Container(child: w, padding: EdgeInsets.all(6.0)))
+//                .toList(),
+//          ),
+//        ),
+//      ),
+//    );
+//  }
+//}
+//
+//class _Btn extends StatelessWidget {
+//  final String txt;
+//  final VoidCallback onPressed;
+//
+//  const _Btn({Key key, this.txt, this.onPressed}) : super(key: key);
+//
+//  @override
+//  Widget build(BuildContext context) {
+//    return ButtonTheme(
+//        minWidth: 48.0,
+//        child: RaisedButton(child: Text(txt), onPressed: onPressed));
+//  }
+//}
+//
+//
+//enum PlayerState { stopped, playing, paused }
+//enum PlayingRouteState { speakers, earpiece }
+//
+//class PlayerWidget extends StatefulWidget {
+//  final String url;
+//  final PlayerMode mode;
+//
+//  PlayerWidget(
+//      {Key key, @required this.url, this.mode = PlayerMode.MEDIA_PLAYER})
+//      : super(key: key);
+//
+//  @override
+//  State<StatefulWidget> createState() {
+//    return _PlayerWidgetState(url, mode);
+//  }
+//}
+//
+//class _PlayerWidgetState extends State<PlayerWidget> {
+//  String url;
+//  PlayerMode mode;
+//
+//  AudioPlayer _audioPlayer;
+//  AudioPlayerState _audioPlayerState;
+//  Duration _duration;
+//  Duration _position;
+//
+//  PlayerState _playerState = PlayerState.stopped;
+//  PlayingRouteState _playingRouteState = PlayingRouteState.speakers;
+//  StreamSubscription _durationSubscription;
+//  StreamSubscription _positionSubscription;
+//  StreamSubscription _playerCompleteSubscription;
+//  StreamSubscription _playerErrorSubscription;
+//  StreamSubscription _playerStateSubscription;
+//
+//  get _isPlaying => _playerState == PlayerState.playing;
+//  get _isPaused => _playerState == PlayerState.paused;
+//  get _durationText => _duration?.toString()?.split('.')?.first ?? '';
+//  get _positionText => _position?.toString()?.split('.')?.first ?? '';
+//
+//  get _isPlayingThroughEarpiece =>
+//      _playingRouteState == PlayingRouteState.earpiece;
+//
+//  _PlayerWidgetState(this.url, this.mode);
+//
+//  @override
+//  void initState() {
+//    super.initState();
+//    _initAudioPlayer();
+//  }
+//
+//  @override
+//  void dispose() {
+//    _audioPlayer.dispose();
+//    _durationSubscription?.cancel();
+//    _positionSubscription?.cancel();
+//    _playerCompleteSubscription?.cancel();
+//    _playerErrorSubscription?.cancel();
+//    _playerStateSubscription?.cancel();
+//    super.dispose();
+//  }
+//
+//  @override
+//  Widget build(BuildContext context) {
+//    return Column(
+//      mainAxisSize: MainAxisSize.min,
+//      children: <Widget>[
+//        Row(
+//          mainAxisSize: MainAxisSize.min,
+//          children: [
+//            IconButton(
+//              key: Key('play_button'),
+//              onPressed: _isPlaying ? null : () => _play(),
+//              iconSize: 64.0,
+//              icon: Icon(Icons.play_arrow),
+//              color: Colors.cyan,
+//            ),
+//            IconButton(
+//              key: Key('pause_button'),
+//              onPressed: _isPlaying ? () => _pause() : null,
+//              iconSize: 64.0,
+//              icon: Icon(Icons.pause),
+//              color: Colors.cyan,
+//            ),
+//            IconButton(
+//              key: Key('stop_button'),
+//              onPressed: _isPlaying || _isPaused ? () => _stop() : null,
+//              iconSize: 64.0,
+//              icon: Icon(Icons.stop),
+//              color: Colors.cyan,
+//            ),
+//            IconButton(
+//              onPressed: _earpieceOrSpeakersToggle,
+//              iconSize: 64.0,
+//              icon: _isPlayingThroughEarpiece
+//                  ? Icon(Icons.volume_up)
+//                  : Icon(Icons.hearing),
+//              color: Colors.cyan,
+//            ),
+//          ],
+//        ),
+//        Column(
+//          mainAxisSize: MainAxisSize.min,
+//          children: [
+//            Padding(
+//              padding: EdgeInsets.all(12.0),
+//              child: Stack(
+//                children: [
+//                  Slider(
+//                    onChanged: (v) {
+//                      final Position = v * _duration.inMilliseconds;
+//                      _audioPlayer
+//                          .seek(Duration(milliseconds: Position.round()));
+//                    },
+//                    value: (_position != null &&
+//                        _duration != null &&
+//                        _position.inMilliseconds > 0 &&
+//                        _position.inMilliseconds < _duration.inMilliseconds)
+//                        ? _position.inMilliseconds / _duration.inMilliseconds
+//                        : 0.0,
+//                  ),
+//                ],
+//              ),
+//            ),
+//            Text(
+//              _position != null
+//                  ? '${_positionText ?? ''} / ${_durationText ?? ''}'
+//                  : _duration != null ? _durationText : '',
+//              style: TextStyle(fontSize: 24.0),
+//            ),
+//          ],
+//        ),
+//        Text('State: $_audioPlayerState')
+//      ],
+//    );
+//  }
+//
+//  void _initAudioPlayer() {
+//    _audioPlayer = AudioPlayer(mode: mode);
+//
+//    _durationSubscription = _audioPlayer.onDurationChanged.listen((duration) {
+//      setState(() => _duration = duration);
+//
+//      // TODO implemented for iOS, waiting for android impl
+//      if (Theme.of(context).platform == TargetPlatform.iOS) {
+//        // (Optional) listen for notification updates in the background
+//        _audioPlayer.startHeadlessService();
+//
+//        // set at least title to see the notification bar on ios.
+//        _audioPlayer.setNotification(
+//            title: 'App Name',
+//            artist: 'Artist or blank',
+//            albumTitle: 'Name or blank',
+//            imageUrl: 'url or blank',
+//            forwardSkipInterval: const Duration(seconds: 30), // default is 30s
+//            backwardSkipInterval: const Duration(seconds: 30), // default is 30s
+//            duration: duration,
+//            elapsedTime: Duration(seconds: 0));
+//      }
+//    });
+//
+//    _positionSubscription =
+//        _audioPlayer.onAudioPositionChanged.listen((p) => setState(() {
+//          _position = p;
+//        }));
+//
+//    _playerCompleteSubscription =
+//        _audioPlayer.onPlayerCompletion.listen((event) {
+//          _onComplete();
+//          setState(() {
+//            _position = _duration;
+//          });
+//        });
+//
+//    _playerErrorSubscription = _audioPlayer.onPlayerError.listen((msg) {
+//      print('audioPlayer error : $msg');
+//      setState(() {
+//        _playerState = PlayerState.stopped;
+//        _duration = Duration(seconds: 0);
+//        _position = Duration(seconds: 0);
+//      });
+//    });
+//
+//    _audioPlayer.onPlayerStateChanged.listen((state) {
+//      if (!mounted) return;
+//      setState(() {
+//        _audioPlayerState = state;
+//      });
+//    });
+//
+//    _audioPlayer.onNotificationPlayerStateChanged.listen((state) {
+//      if (!mounted) return;
+//      setState(() => _audioPlayerState = state);
+//    });
+//
+//    _playingRouteState = PlayingRouteState.speakers;
+//  }
+//
+//  Future<int> _play() async {
+//    final playPosition = (_position != null &&
+//        _duration != null &&
+//        _position.inMilliseconds > 0 &&
+//        _position.inMilliseconds < _duration.inMilliseconds)
+//        ? _position
+//        : null;
+//    final result = await _audioPlayer.play(url, position: playPosition);
+//    if (result == 1) setState(() => _playerState = PlayerState.playing);
+//
+//    // default playback rate is 1.0
+//    // this should be called after _audioPlayer.play() or _audioPlayer.resume()
+//    // this can also be called everytime the user wants to change playback rate in the UI
+//    _audioPlayer.setPlaybackRate(playbackRate: 1.0);
+//
+//    return result;
+//  }
+//
+//  Future<int> _pause() async {
+//    final result = await _audioPlayer.pause();
+//    if (result == 1) setState(() => _playerState = PlayerState.paused);
+//    return result;
+//  }
+//
+//  Future<int> _earpieceOrSpeakersToggle() async {
+//    final result = await _audioPlayer.earpieceOrSpeakersToggle();
+//    if (result == 1)
+//      setState(() => _playingRouteState =
+//      _playingRouteState == PlayingRouteState.speakers
+//          ? PlayingRouteState.earpiece
+//          : PlayingRouteState.speakers);
+//    return result;
+//  }
+//
+//  Future<int> _stop() async {
+//    final result = await _audioPlayer.stop();
+//    if (result == 1) {
+//      setState(() {
+//        _playerState = PlayerState.stopped;
+//        _position = Duration();
+//      });
+//    }
+//    return result;
+//  }
+//
+//  void _onComplete() {
+//    setState(() => _playerState = PlayerState.stopped);
+//  }
+//}

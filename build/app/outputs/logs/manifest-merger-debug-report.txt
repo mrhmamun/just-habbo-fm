@@ -5,6 +5,7 @@ INJECTED from /Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/androi
 INJECTED from /Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:1:1-53:12
 INJECTED from /Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:1:1-53:12
 MERGED from /Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml:1:1-53:12
+MERGED from [:audioplayers] /Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/build/audioplayers/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:just_audio] /Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/build/just_audio/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:path_provider] /Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:path_provider_macos] /Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/build/path_provider_macos/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
@@ -115,6 +116,8 @@ uses-sdk
 INJECTED from /Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/android/app/src/main/AndroidManifest.xml
+MERGED from [:audioplayers] /Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/build/audioplayers/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-44
+MERGED from [:audioplayers] /Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/build/audioplayers/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-44
 MERGED from [:just_audio] /Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/build/just_audio/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:just_audio] /Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/build/just_audio/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] /Users/mamun/Developer/githubProjects/Flutter/just-habbo-fm/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
