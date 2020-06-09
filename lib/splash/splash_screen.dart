@@ -20,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen>
 
   @override
   void initState() {
-    _timer = Timer(Duration(seconds: 12), () {
+    _timer = Timer(Duration(seconds: 5), () {
       Navigator.push(
           context, MaterialPageRoute(builder: (context) => HomePage()));
     });
@@ -118,30 +118,7 @@ class _SplashScreenState extends State<SplashScreen>
     );
   }
 
-  Widget get _animatedButtonUI => Container(
-        height: 60,
-        width: 270,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(100.0),
-          color: Colors.white,
-        ),
-        child: Center(
-          child: GestureDetector(
-            onTap: () {
-              Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (context) => HomePage()));
-            },
-            child: Text(
-              'Live Cams',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Color(0xFF8185E2),
-              ),
-            ),
-          ),
-        ),
-      );
+
 
   void _onTapDown(TapDownDetails details) {
     _controller.forward();

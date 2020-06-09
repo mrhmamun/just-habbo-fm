@@ -92,7 +92,7 @@ class _MoreState extends State<More> {
               children: [
                 SizedBox(height: 50,),
                 Text(
-                  'Donate to Us!',
+                  'Donate us!',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                       color: Colors.white, fontWeight: FontWeight.bold,fontSize: 25),
@@ -124,7 +124,7 @@ class _MoreState extends State<More> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                  'Connect With Us!',
+                  'Connect with us!',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                       color: Colors.white, fontWeight: FontWeight.bold,fontSize: 25),

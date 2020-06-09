@@ -10,14 +10,14 @@ class About extends StatefulWidget {
 
 class _AboutState extends State<About> {
   final String text =
-      "JustHabbo Is an International unofficial fan site for the world of Habbo providing 24/7 radio, events, discussions, competitions and More.";
+      "JustHabbo is an international unofficial fan site for the world of Habbo providing 24/7 radio, events, discussions, competitions and More.";
 
   final String text1 =
       "JustHabbo was started back In 2012 by Richard, Andrew and Rue however due to unforeseen circumstances they had to close the Site.";
 
   final String text2 =
-      """JustHabbo was taken over with Grant and Harry as the new ownership, over the past couple years we have had multiple different Owners however Hany Is still here awning this incredible famine.\nJustHabbo has had a rough time since the original launch in 2012 however we have come though the rocky waters stronger than ever, JustHabbo has seen past versions from Version one though too Version 4.   \nThe Launch of V5 is around the corner and we hope you stick around to see It. 
-We developed this app to enhance our users experience allowing people to tune Into JustHabbo, and to never miss any Information whilst they are on the go.\n 
+      """JustHabbo was taken over with Grant and Harry as the new ownership, over the past couple of years we have had multiple different Owners however Harry is still here running this incredible Fansite.\nJustHabbo has had a rough time since the original launch in 2012 however we have come though the rocky waters stronger than ever, JustHabbo has seen past versions from Version one though too Version 4.   \nThe Launch of V5 is around the corner and we hope you stick around to see It. 
+We developed this app to enhance our users experience allowing people to tune into JustHabbo, and to never miss any information whilst they are on the go.\n 
 JustHabbo has some exciting plans to develop and enhance the app, so be sure to stay tuned for any future updates 
 """;
 
