@@ -61,13 +61,13 @@ class _AppUpdatesState extends State<AppUpdates> {
                   style: TextStyle(
                       color: Colors.white, fontWeight: FontWeight.bold),
                 ),
-                Text('Designed By: Harry Pattinsion',
+                Text('Designed By: Harry Pattinson',
                     style: TextStyle(
                         color: Colors.white, fontWeight: FontWeight.bold)),
                 Text('Coded By: mrhmamun99',
                     style: TextStyle(
                         color: Colors.white, fontWeight: FontWeight.bold)),
-                Text('Update Date: Wednesday 15th April 2020',
+                Text('Update Date: Wednesday 9th June 2020',
                     style: TextStyle(
                         color: Colors.white, fontWeight: FontWeight.bold)),
                 SizedBox(
