@@ -35,7 +35,7 @@ dependencies:
   http:
   google_fonts: ^0.5.0+1
   url_launcher:
-  just_audio:
+  just_audio: ^0.2.0
   dio: ^3.0.9
 
 dev_dependencies:

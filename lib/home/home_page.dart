@@ -18,7 +18,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
-  final String url = 'https://whsh4u-panel.com/proxy/xegagooy?mp=/live';
+  final String url = 'https://whsh4u-panel.com//proxy/xegagooy?mp=/live';
 //  final String url = 'http://server-23.stream-server.nl:8438';
 //  final String url = 'https://178.79.134.144/radio/8000/radio.mp3';
 
@@ -27,7 +27,9 @@ class _HomePageState extends State<HomePage> {
   AudioPlayer _player;
   @override
   void initState() {
+    AudioPlayer.setIosCategory(IosCategory.playback);
     super.initState();
+
     _player = AudioPlayer();
 
     _player.setUrl(url)
