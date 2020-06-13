@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:justhabbo_fm/home/home_page.dart';
 import 'package:justhabbo_fm/widgets/bottomInfoBar.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'dart:io';
 
 class More extends StatefulWidget {
   @override
@@ -11,8 +11,6 @@ class More extends StatefulWidget {
 }
 
 class _MoreState extends State<More> {
-
-
 
  _launchURL() async {
    const url = 'https://www.justhabbo.com';
@@ -64,7 +62,21 @@ class _MoreState extends State<More> {
  }
 
 
-
+_getDetails(){
+   if(Platform.isIOS){
+    return Center(
+      child: SizedBox(
+        height: 50,
+      )
+    );
+   }else{
+     return Center(
+         child: SizedBox(
+           height: 50,
+         )
+     );
+   }
+}
 
   @override
   Widget build(BuildContext context) {
@@ -86,38 +98,9 @@ class _MoreState extends State<More> {
       body: Center(
         child: ListView(
           children: [
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                SizedBox(height: 50,),
-                Text(
-                  'Donate us!',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold,fontSize: 25),
-                ),
-                SizedBox(
-                  height: 5,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Container(
-                      height: 80,
-                      child: GestureDetector(
-                        onTap: (){
-                          _launchPaypal();
-                        },
-                        child:
-                            Icon(FontAwesomeIcons.ccPaypal,size: 50,color: Colors.white,),
-                      ),
-                    ),
-                  ],
-                ),
-              ],
-            ),
+
+            _getDetails(),
+
             SizedBox(height: 20,),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,

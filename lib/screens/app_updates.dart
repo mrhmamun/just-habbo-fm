@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -11,8 +13,6 @@ class AppUpdates extends StatefulWidget {
 }
 
 class _AppUpdatesState extends State<AppUpdates> {
-
-
   _launchPlayStore() async {
     const url = 'https://play.google.com/store/search?q=just%20habbo&c=apps';
     if (await canLaunch(url)) {
@@ -21,6 +21,7 @@ class _AppUpdatesState extends State<AppUpdates> {
       throw 'Could not launch $url';
     }
   }
+
   _launchAppleStore() async {
     const url = 'https://appstoreconnect.apple.com';
     if (await canLaunch(url)) {
@@ -30,6 +31,65 @@ class _AppUpdatesState extends State<AppUpdates> {
     }
   }
 
+  _getStoreUpdates() {
+    if (Platform.isIOS) {
+      return Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Container(
+            height: 80,
+            child: GestureDetector(
+              onTap: () {
+                _launchAppleStore();
+              },
+              child: Icon(
+                FontAwesomeIcons.apple,
+                size: 55,
+                color: Colors.white,
+              ),
+            ),
+          ),
+        ],
+      );
+    } else {
+      return Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Container(
+            height: 80,
+            child: GestureDetector(
+              onTap: () {
+                _launchPlayStore();
+              },
+              child: Icon(
+                Icons.android,
+                size: 50,
+                color: Colors.white,
+              ),
+            ),
+          ),
+          SizedBox(
+            width: 50,
+          ),
+          Container(
+            height: 80,
+            child: GestureDetector(
+              onTap: () {
+                _launchAppleStore();
+              },
+              child: Icon(
+                FontAwesomeIcons.apple,
+                size: 55,
+                color: Colors.white,
+              ),
+            ),
+          ),
+        ],
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -86,40 +146,18 @@ class _AppUpdatesState extends State<AppUpdates> {
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                         fontSize: 15)),
-                SizedBox(height: 10,),
+                SizedBox(
+                  height: 10,
+                ),
                 Text('Download Updates:',
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                         fontSize: 20)),
-                SizedBox(height: 10,),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Container(
-                      height: 80,
-                      child: GestureDetector(
-                        onTap:(){
-                          _launchPlayStore();
-                        },
-                        child:
-                        Icon(Icons.android,size: 50,color: Colors.white,),
-                      ),
-                    ),
-                    SizedBox(width: 50,),
-                    Container(
-                      height: 80,
-                      child: GestureDetector(
-                        onTap: (){
-                          _launchAppleStore();
-                        },
-                        child:
-                        Icon(FontAwesomeIcons.apple,size: 55,color: Colors.white,),
-                      ),
-                    ),
-                  ],
+                SizedBox(
+                  height: 10,
                 ),
+                _getStoreUpdates(),
               ],
             ),
           ],
