@@ -1,4 +1,6 @@
 import 'dart:io';
+import 'package:device_preview/device_preview.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:justhabbo_fm/splash/splash_screen.dart';
@@ -38,12 +40,21 @@ Future<bool> addSelfSignedCertificate() async {
 }
 
 void main() async {
+//  debugDefaultTargetPlatformOverride = TargetPlatform.fuchsia;
   WidgetsFlutterBinding.ensureInitialized();
   assert(await addSelfSignedCertificate());
-  runApp(MyApp());
+  runApp(
+    MyApp(),
+  );
 }
 
 
+//void main() => runApp(
+//  DevicePreview(
+//    enabled: !kReleaseMode,
+//    builder: (context) => MyApp(),
+//  ),
+//);
 
 
 
