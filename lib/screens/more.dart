@@ -101,7 +101,7 @@ _getDetails(){
 
             _getDetails(),
 
-            SizedBox(height: 20,),
+            SizedBox(height: 50,),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
